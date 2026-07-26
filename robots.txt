@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shantj.github.io/sproutguard/sitemap.xml
