@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Block Apps on iPhone (2026): Every Method, Ranked</title>
+<meta name="description" content="Four ways to block apps on iPhone — Screen Time limits, Downtime, Focus modes, and third-party blockers. What each one actually stops, and where each fails.">
+<meta name="keywords" content="how to block apps on iphone, block instagram on iphone, block apps iphone screen time, app blocker iphone, iphone downtime, block tiktok iphone, screen time limits iphone">
+<link rel="canonical" href="https://shantj.github.io/sproutguard/how-to-block-apps-on-iphone.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Block Apps on iPhone: Every Method, Ranked">
+<meta property="og:description" content="Screen Time limits, Downtime, Focus modes, third-party blockers — what each actually stops and where each fails.">
+<meta property="og:url" content="https://shantj.github.io/sproutguard/how-to-block-apps-on-iphone.html">
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"HowTo",
+ "name":"How to Block Apps on iPhone",
+ "description":"Four built-in and third-party methods to block apps on iPhone, with the limitations of each.",
+ "step":[
+  {"@type":"HowToStep","name":"Block an app with a Screen Time App Limit"},
+  {"@type":"HowToStep","name":"Block apps on a schedule with Downtime"},
+  {"@type":"HowToStep","name":"Hide apps contextually with Focus modes"},
+  {"@type":"HowToStep","name":"Lock the loophole with a third-party blocker"}
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {"@type":"Question","name":"Can I block an app on iPhone without a Screen Time passcode?",
+   "acceptedAnswer":{"@type":"Answer","text":"Yes. Screen Time App Limits and Downtime work without a passcode, but without one you can dismiss the block yourself in one tap. A passcode — or a third-party blocker with its own lock — is what makes the block hold."}},
+  {"@type":"Question","name":"Why does 'Ignore Limit' let me back into the app?",
+   "acceptedAnswer":{"@type":"Answer","text":"Screen Time limits are advisory by default. Unless a Screen Time passcode is set, the block screen offers 'Ignore Limit' and grants another 15 minutes or the rest of the day. That is the single most common reason iPhone app blocking fails."}},
+  {"@type":"Question","name":"Do app blockers on iPhone see my data?",
+   "acceptedAnswer":{"@type":"Answer","text":"They do not have to. Apple's Screen Time API (Family Controls / Managed Settings) is designed so a blocker can restrict apps without ever reading which apps you used. Apps built purely on that API — SproutGuard is one — can run entirely on-device with no account and no server."}}
+ ]
+}
+</script>
+
+<style>
+:root{--bg:#0d1117;--fg:#e6edf3;--muted:#8b949e;--accent:#3fb950;--card:#161b22;--border:#30363d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+nav{padding:22px 0;border-bottom:1px solid var(--border)}
+nav a{color:var(--accent);text-decoration:none;font-weight:600}
+article{padding:56px 0}
+h1{font-size:clamp(28px,4.5vw,40px);line-height:1.2;margin-bottom:16px;letter-spacing:-.02em}
+.lede{font-size:19px;color:var(--muted);margin-bottom:40px}
+h2{font-size:22px;margin:40px 0 14px;letter-spacing:-.01em}
+h3{font-size:17px;margin:24px 0 10px}
+h2 .num{color:var(--accent);margin-right:8px}
+p{margin-bottom:16px;color:#c9d1d9}
+.callout{background:var(--card);border-left:3px solid var(--accent);padding:18px 22px;border-radius:0 10px 10px 0;margin:22px 0}
+.callout p{margin:0}
+ul,ol{margin:0 0 16px 22px;color:#c9d1d9}
+li{margin-bottom:9px}
+table{width:100%;border-collapse:collapse;margin:22px 0;font-size:15px}
+th,td{border:1px solid var(--border);padding:10px 12px;text-align:left;color:#c9d1d9}
+th{background:var(--card);color:var(--fg)}
+.cta-box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;margin:44px 0;text-align:center}
+.cta{display:inline-block;background:var(--accent);color:#0d1117;font-weight:700;padding:13px 30px;border-radius:9px;text-decoration:none;margin-top:14px}
+.related{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:22px;margin:36px 0}
+.related a{color:var(--accent);text-decoration:none}
+footer{padding:40px 0;border-top:1px solid var(--border);color:var(--muted);font-size:14px;text-align:center}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap"><a href="/sproutguard/">🌱 SproutGuard</a></div></nav>
+
+<article>
+<div class="wrap">
+
+<h1>How to Block Apps on iPhone</h1>
+<p class="lede">iOS gives you four different ways to do this and none of the menus explain how they differ. Here's each method, the exact steps, and — more usefully — the specific way each one fails.</p>
+
+<h2><span class="num">1.</span> Screen Time App Limits (block after X minutes)</h2>
+<p>The default answer, and the weakest one.</p>
+<ol>
+  <li>Settings → Screen Time</li>
+  <li>App Limits → Add Limit</li>
+  <li>Pick a category, or tap the arrow to select individual apps</li>
+  <li>Set the time, then Add</li>
+</ol>
+<p><strong>Where it fails:</strong> a limit is a budget, not a wall. You spend the whole thing in one sitting before 10am, hit the block screen, tap <em>Ignore Limit</em>, and get the rest of the day back. Without a Screen Time passcode set, that tap is completely free.</p>
+
+<div class="callout"><p><strong>Fix it in ten seconds:</strong> Screen Time → Lock Screen Time Settings → set a 4-digit passcode you don't reuse. Now "Ignore Limit" asks for something. This one setting is the difference between Screen Time working and not working.</p></div>
+
+<h2><span class="num">2.</span> Downtime (block on a schedule)</h2>
+<p>Better than limits for most people, because it blocks by <em>when</em> rather than <em>how much</em>.</p>
+<ol>
+  <li>Settings → Screen Time → Downtime</li>
+  <li>Turn on Scheduled</li>
+  <li>Set the window — 10pm–7am, or your working hours</li>
+  <li>Under "Always Allowed", strip the list down to Phone and Messages</li>
+</ol>
+<p><strong>Where it fails:</strong> one schedule for the whole day. If you want social apps blocked 9–5 <em>and</em> after 10pm but not in between, Downtime alone can't express that. Same passcode caveat applies.</p>
+
+<h2><span class="num">3.</span> Focus modes (hide, don't block)</h2>
+<ol>
+  <li>Settings → Focus → tap a Focus (or +)</li>
+  <li>Under Home Screen, choose which pages show while it's on</li>
+  <li>Set Schedule, or trigger it by location/app</li>
+</ol>
+<p><strong>Where it fails:</strong> Focus mostly silences notifications and hides icons. Spotlight search still opens the app instantly. It's excellent friction and zero enforcement — useful in combination with the methods above, useless alone if the pull is strong.</p>
+
+<h2><span class="num">4.</span> A third-party blocker (when the built-ins keep losing)</h2>
+<p>Since iOS 16, Apple lets third-party apps use the same Screen Time enforcement engine (the Family Controls / Managed Settings APIs). A well-built blocker doesn't hack around iOS — it drives the same machinery with a better interface, and adds the two things Apple's version lacks:</p>
+<ul>
+  <li><strong>Blocks that don't hand you an "ignore" button</strong> — a session you started has to finish.</li>
+  <li><strong>A streak.</strong> Screen Time reports a number you learn to ignore. A streak has state you don't want to break, which is why streak-based tools hold up over months where limits don't.</li>
+</ul>
+
+<h2>Which one should you use?</h2>
+<table>
+<tr><th>Goal</th><th>Use</th></tr>
+<tr><td>Cut total daily use</td><td>App Limits + Screen Time passcode</td></tr>
+<tr><td>Stop bedtime / morning scrolling</td><td>Downtime, 10pm–8am</td></tr>
+<tr><td>Reduce pull without hard blocking</td><td>Focus mode + move apps off page one</td></tr>
+<tr><td>You keep tapping "Ignore Limit"</td><td>Third-party blocker with real sessions</td></tr>
+</table>
+
+<h2>A note on privacy</h2>
+<p>Worth knowing before you install anything: Apple designed the Screen Time API so a blocker can restrict apps <em>without being told which apps you use</em>. The selection is made inside a system-provided picker your app never reads. So any blocker asking you to create an account, sign in, or upload usage "for insights" is choosing to collect that — the platform doesn't require it.</p>
+
+<div class="cta-box">
+  <strong style="font-size:19px">SproutGuard — block yourself, not your kids</strong>
+  <p style="margin-top:10px;color:var(--muted)">Built on Apple's Screen Time framework. No account, no server, nothing leaves your phone. Blocking + focus sessions + streaks.</p>
+  <a class="cta" href="https://apps.apple.com/us/app/sproutguard-screen-time-detox/id6768664921">Download free on iOS</a>
+</div>
+
+<div class="related">
+  <strong>Related reading</strong>
+  <ul style="margin-top:10px">
+    <li><a href="/sproutguard/how-to-stop-doomscrolling.html">How to stop doomscrolling — 7 things that actually work</a></li>
+    <li><a href="/sproutguard/screen-time-without-parental-controls.html">Screen time apps that aren't parental controls</a></li>
+    <li><a href="/sproutguard/best-app-blockers-for-adults.html">Best app blockers for adults on iPhone</a></li>
+  </ul>
+</div>
+
+</div>
+</article>
+
+<footer><div class="wrap"><a href="/sproutguard/">← Back to SproutGuard</a></div></footer>
+
+</body>
+</html>
