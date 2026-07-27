@@ -51,4 +51,17 @@ You can — it's your phone. The streak is the point: friction plus a number you
 
 ---
 
+## Guides
+
+Free, no-signup guides published alongside the app:
+
+- [How to block apps on iPhone](https://shantj.github.io/sproutguard/how-to-block-apps-on-iphone.html) — all four iOS methods and exactly where each one fails
+- [How to block Instagram on iPhone](https://shantj.github.io/sproutguard/block-instagram-on-iphone.html) — plus the three loopholes (Safari, "Ignore Limit", reinstall) that undo it
+- [App blockers without a subscription](https://shantj.github.io/sproutguard/app-blocker-without-subscription.html) — why most charge weekly, and how to spot a fake free tier
+- [Best app blockers for adults](https://shantj.github.io/sproutguard/best-app-blockers-for-adults.html) — honest comparison, including when the built-in free option wins
+- [How to stop doomscrolling](https://shantj.github.io/sproutguard/how-to-stop-doomscrolling.html) — 7 things that work when willpower doesn't
+- [Screen time without parental controls](https://shantj.github.io/sproutguard/screen-time-without-parental-controls.html) — why the two categories aren't the same
+
+---
+
 *Made by an indie developer who was doomscrolling 3 hours a day.*
