@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Block Instagram on iPhone (And Make It Actually Stick)</title>
+<meta name="description" content="Block Instagram on iPhone with Screen Time, Downtime, or a third-party blocker — plus the three loopholes (Safari, Ignore Limit, reinstall) that undo it.">
+<meta name="keywords" content="how to block instagram on iphone, block instagram app, block instagram safari, screen time instagram limit, block tiktok iphone, stop using instagram">
+<link rel="canonical" href="https://shantj.github.io/sproutguard/block-instagram-on-iphone.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Block Instagram on iPhone (And Make It Stick)">
+<meta property="og:description" content="Every method, plus the three loopholes that quietly undo your block.">
+<meta property="og:url" content="https://shantj.github.io/sproutguard/block-instagram-on-iphone.html">
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"HowTo",
+ "name":"How to Block Instagram on iPhone",
+ "description":"Block the Instagram app and instagram.com on iPhone using Screen Time, Downtime, Content Restrictions, or a third-party blocker.",
+ "step":[
+  {"@type":"HowToStep","name":"Set a Screen Time App Limit on Instagram"},
+  {"@type":"HowToStep","name":"Block instagram.com in Safari with Content Restrictions"},
+  {"@type":"HowToStep","name":"Schedule Downtime so it blocks itself"},
+  {"@type":"HowToStep","name":"Close the Ignore Limit loophole"}
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {"@type":"Question","name":"How do I block Instagram on iPhone permanently?",
+   "acceptedAnswer":{"@type":"Answer","text":"There is no truly permanent block — it is your phone. The closest thing is a Screen Time App Limit of 1 minute on Instagram, plus a Screen Time passcode you do not memorise easily, plus blocking instagram.com under Content Restrictions so the web version cannot replace the app. Deleting the app alone does not work because reinstalling takes fifteen seconds."}},
+  {"@type":"Question","name":"Why can I still open Instagram in Safari after blocking the app?",
+   "acceptedAnswer":{"@type":"Answer","text":"Screen Time App Limits apply to the app, not the website. instagram.com in a browser is a separate surface and is by far the most common way an Instagram block gets undone. Block it under Settings > Screen Time > Content and Privacy Restrictions > Content Restrictions > Web Content > Limit Adult Websites > Never Allow."}},
+  {"@type":"Question","name":"Does blocking Instagram with Screen Time tell anyone?",
+   "acceptedAnswer":{"@type":"Answer","text":"No. Screen Time restrictions you set for yourself are local to your device unless you have explicitly joined a Family Sharing group where an organiser manages your Screen Time. Blocking Instagram on your own iPhone is not reported to Apple, Instagram, or anyone else."}}
+ ]
+}
+</script>
+
+<style>
+:root{--bg:#0d1117;--fg:#e6edf3;--muted:#8b949e;--accent:#3fb950;--card:#161b22;--border:#30363d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+nav{padding:22px 0;border-bottom:1px solid var(--border)}
+nav a{color:var(--accent);text-decoration:none;font-weight:600}
+article{padding:56px 0}
+h1{font-size:clamp(28px,4.5vw,40px);line-height:1.2;margin-bottom:16px;letter-spacing:-.02em}
+.lede{font-size:19px;color:var(--muted);margin-bottom:40px}
+h2{font-size:22px;margin:40px 0 14px;letter-spacing:-.01em}
+h2 .num{color:var(--accent);margin-right:8px}
+p{margin-bottom:16px;color:#c9d1d9}
+.callout{background:var(--card);border-left:3px solid var(--accent);padding:18px 22px;border-radius:0 10px 10px 0;margin:22px 0}
+.callout p{margin:0}
+ul,ol{margin:0 0 16px 22px;color:#c9d1d9}
+li{margin-bottom:9px}
+table{width:100%;border-collapse:collapse;margin:22px 0;font-size:15px}
+th,td{border:1px solid var(--border);padding:10px 12px;text-align:left;color:#c9d1d9}
+th{background:var(--card);color:var(--fg)}
+.cta-box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;margin:44px 0;text-align:center}
+.cta{display:inline-block;background:var(--accent);color:#0d1117;font-weight:700;padding:13px 30px;border-radius:9px;text-decoration:none;margin-top:14px}
+.related{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:22px;margin:36px 0}
+.related a{color:var(--accent);text-decoration:none}
+footer{padding:40px 0;border-top:1px solid var(--border);color:var(--muted);font-size:14px;text-align:center}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap"><a href="/sproutguard/">🌱 SproutGuard</a></div></nav>
+
+<article>
+<div class="wrap">
+
+<h1>How to Block Instagram on iPhone</h1>
+<p class="lede">Blocking the app takes about forty seconds. Making the block survive contact with your own willpower is the part every tutorial skips — so this one starts with the three loopholes.</p>
+
+<h2>First: the three things that undo an Instagram block</h2>
+<ol>
+  <li><strong>Safari.</strong> You block the app; instagram.com still loads in a browser. This is the number one failure.</li>
+  <li><strong>"Ignore Limit."</strong> Without a Screen Time passcode, the block screen has a button that gives you the rest of the day back for free.</li>
+  <li><strong>Reinstalling.</strong> Deleting the app is not a block. It is a fifteen-second speed bump, and the login is still saved.</li>
+</ol>
+<p>Any method below that doesn't close all three will fail within a week. That's not a willpower problem; it's a configuration problem.</p>
+
+<h2><span class="num">1.</span> Block the Instagram app with a Screen Time App Limit</h2>
+<ol>
+  <li>Settings → Screen Time → App Limits → Add Limit</li>
+  <li>Social → tap the arrow → tick <strong>Instagram</strong> only (leave the rest of Social alone unless you mean it)</li>
+  <li>Set the time to <strong>1 minute</strong> — not 30. A 30-minute budget is permission, not a block.</li>
+  <li>Tap Add</li>
+</ol>
+<p>From now on Instagram greys out roughly the moment you open it.</p>
+
+<h2><span class="num">2.</span> Block instagram.com in Safari (the step everyone misses)</h2>
+<ol>
+  <li>Settings → Screen Time → Content &amp; Privacy Restrictions → turn it on</li>
+  <li>Content Restrictions → Web Content → <strong>Limit Adult Websites</strong></li>
+  <li>Under <em>Never Allow</em>, tap Add Website and enter <code>instagram.com</code></li>
+</ol>
+<p>Do this for every browser-reachable surface you actually use. If you only block the app, you have moved your habit, not removed it.</p>
+
+<h2><span class="num">3.</span> Close the "Ignore Limit" loophole</h2>
+<p>Settings → Screen Time → <strong>Lock Screen Time Settings</strong>. Set a four-digit passcode that isn't your phone passcode and isn't a date you can guess in a distracted moment. Ideally have someone else type it, or generate one and don't look.</p>
+<div class="callout"><p><strong>This single step is the difference between Screen Time working and not working.</strong> Everything above is advisory until a passcode stands behind it. If you skip it, you'll be back inside Instagram tonight and you'll conclude that blockers don't work for you. They didn't get a chance to.</p></div>
+
+<h2><span class="num">4.</span> Add Downtime for the two windows that matter</h2>
+<p>Settings → Screen Time → Downtime → Scheduled. The two windows where Instagram does the most damage for most people are the first thirty minutes after waking and the last hour before sleep. Set 10pm–8am and strip "Always Allowed" down to Phone and Messages.</p>
+
+<h2>When the built-ins still aren't enough</h2>
+<p>Apple's tools are budget-shaped: they count minutes and then argue with you. If you've already set all of the above and still find yourself in the app, the missing piece usually isn't a stricter limit — it's <em>state you don't want to break</em>.</p>
+<table>
+<tr><th>Symptom</th><th>What actually fixes it</th></tr>
+<tr><td>You tap "Ignore Limit" daily</td><td>Screen Time passcode you can't recall</td></tr>
+<tr><td>You use instagram.com instead</td><td>Never Allow web entry</td></tr>
+<tr><td>You disable the whole thing on bad days</td><td>A streak counter — a number with a cost to resetting</td></tr>
+<tr><td>You reinstall the app</td><td>Limit set on the app category, not the installed app</td></tr>
+</table>
+<p>Third-party blockers built on Apple's Screen Time API (Family Controls / Managed Settings) drive the exact same system-level enforcement, but can wrap it in a session that doesn't offer you an escape hatch, and a streak that makes quitting visible to you. Notably, that API is designed so the blocker never learns which apps you opened — so no blocker <em>needs</em> an account or a server to work.</p>
+
+<div class="cta-box">
+  <strong style="font-size:19px">SproutGuard — block yourself, not your kids</strong>
+  <p style="margin-top:10px;color:var(--muted)">Blocking, focus sessions and streaks on Apple's Screen Time framework. No account, no cloud, nothing leaves your phone. Free.</p>
+  <a class="cta" href="https://apps.apple.com/us/app/sproutguard-screen-time-detox/id6768664921">Download free on iOS</a>
+</div>
+
+<div class="related">
+  <strong>Related reading</strong>
+  <ul style="margin-top:10px">
+    <li><a href="/sproutguard/how-to-block-apps-on-iphone.html">How to block apps on iPhone — every method, ranked</a></li>
+    <li><a href="/sproutguard/app-blocker-without-subscription.html">App blockers without a subscription</a></li>
+    <li><a href="/sproutguard/how-to-stop-doomscrolling.html">How to stop doomscrolling — 7 things that actually work</a></li>
+    <li><a href="/sproutguard/best-app-blockers-for-adults.html">Best app blockers for adults on iPhone</a></li>
+  </ul>
+</div>
+
+</div>
+</article>
+
+<footer><div class="wrap"><a href="/sproutguard/">← Back to SproutGuard</a></div></footer>
+
+</body>
+</html>
