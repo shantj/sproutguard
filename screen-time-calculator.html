@@ -126,7 +126,9 @@ footer{padding:48px 0 68px;text-align:center;color:var(--muted);font-size:14px;b
       <div class="verdict"><p id="verdict">—</p></div>
 
       <button class="btn2" id="copy">Copy my result</button>
-      <p class="note">Nothing you type here is sent anywhere. The arithmetic runs in your browser; there is no server behind this page.</p>
+      <button class="btn2" id="card">Download my card (PNG)</button>
+      <button class="btn2" id="link">Copy link to this result</button>
+      <p class="note">Nothing you type here is sent anywhere. The arithmetic runs in your browser; there is no server behind this page. The image is drawn on your own device and never uploaded.</p>
     </div>
   </div>
 </section>
@@ -261,13 +263,100 @@ footer{padding:48px 0 68px;text-align:center;color:var(--muted);font-size:14px;b
     else { v=fmt(years,1)+' waking years of conscious life, at your current rate. Past ten years the daily figure has stopped being a useful unit — this is a structural problem, not a discipline one.'; }
     document.getElementById('verdict').textContent=v;
   }
-  [hrs,waste,age].forEach(function(el){el.addEventListener('input',calc);});
+  function syncUrl(){
+    try{
+      var q='?h='+hrs.value+'&w='+waste.value+'&a='+age.value;
+      history.replaceState(null,'',location.pathname+q);
+    }catch(e){}
+  }
+  function readUrl(){
+    try{
+      var p=new URLSearchParams(location.search);
+      var h=parseFloat(p.get('h')),w=parseFloat(p.get('w')),a=parseFloat(p.get('a'));
+      if(isFinite(h)&&h>=0.5&&h<=12){hrs.value=h;}
+      if(isFinite(w)&&w>=0&&w<=100){waste.value=w;}
+      if(isFinite(a)&&a>=10&&a<=99){age.value=a;}
+    }catch(e){}
+  }
+  readUrl();
+  [hrs,waste,age].forEach(function(el){el.addEventListener('input',function(){calc();syncUrl();});});
   calc();
+
+  document.getElementById('link').addEventListener('click',function(){
+    syncUrl();
+    var u=location.origin+location.pathname+location.search;
+    var b=this;
+    function ok(){b.textContent='Link copied ✓';setTimeout(function(){b.textContent='Copy link to this result';},2000);}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(ok,function(){window.prompt('Copy this link:',u);});}
+    else{window.prompt('Copy this link:',u);}
+  });
+
+  function wrapText(ctx,text,x,y,maxW,lh){
+    var words=text.split(' '),line='',n=0;
+    for(var i=0;i<words.length;i++){
+      var t=line?line+' '+words[i]:words[i];
+      if(ctx.measureText(t).width>maxW&&line){ctx.fillText(line,x,y+n*lh);line=words[i];n++;}
+      else{line=t;}
+    }
+    if(line){ctx.fillText(line,x,y+n*lh);n++;}
+    return n;
+  }
+
+  document.getElementById('card').addEventListener('click',function(){
+    var W=1200,H=630,c=document.createElement('canvas');
+    c.width=W;c.height=H;
+    var x=c.getContext('2d');
+    var g=x.createLinearGradient(0,0,W,H);
+    g.addColorStop(0,'#0d1a12');g.addColorStop(1,'#132a1c');
+    x.fillStyle=g;x.fillRect(0,0,W,H);
+    x.fillStyle='#4ade80';x.fillRect(0,0,W,10);
+
+    x.fillStyle='#86efac';
+    x.font='600 30px -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif';
+    x.fillText('MY SCREEN TIME, PRICED HONESTLY',70,110);
+
+    x.fillStyle='#ffffff';
+    x.font='800 132px -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif';
+    var y4=document.getElementById('o4').textContent;
+    x.fillText(y4,70,265);
+    var wNum=x.measureText(y4).width;
+    x.fillStyle='#d1fae5';
+    x.font='500 40px -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif';
+    x.fillText('waking years of the life I have left',70+wNum+24,265);
+
+    x.fillStyle='#9ca3af';
+    x.font='400 32px -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif';
+    x.fillText(document.getElementById('hrsv').textContent+' a day  ·  '+
+      document.getElementById('o2').textContent+' full days a year  ·  '+
+      document.getElementById('o3').textContent+' waking weeks a year',70,330);
+
+    x.strokeStyle='#1f3d2a';x.lineWidth=2;
+    x.beginPath();x.moveTo(70,375);x.lineTo(W-70,375);x.stroke();
+
+    x.fillStyle='#e5e7eb';
+    x.font='400 30px -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif';
+    wrapText(x,document.getElementById('verdict').textContent,70,425,W-140,42);
+
+    x.fillStyle='#4ade80';
+    x.font='600 28px -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif';
+    x.fillText('Work out yours — shantj.github.io/sproutguard/screen-time-calculator.html',70,H-50);
+
+    var btn=this;
+    try{
+      var url=c.toDataURL('image/png');
+      var a=document.createElement('a');
+      a.href=url;a.download='my-screen-time.png';
+      document.body.appendChild(a);a.click();document.body.removeChild(a);
+      btn.textContent='Saved ✓';setTimeout(function(){btn.textContent='Download my card (PNG)';},2000);
+    }catch(e){
+      btn.textContent='Could not save image';setTimeout(function(){btn.textContent='Download my card (PNG)';},2500);
+    }
+  });
 
   document.getElementById('copy').addEventListener('click',function(){
     var t='At '+document.getElementById('hrsv').textContent+' of screen time a day, I spend '+
       document.getElementById('o2').textContent+' full days a year on my phone — and '+
-      document.getElementById('o4').textContent+' waking years of the life I have left.\n\nWork out yours: https://shantj.github.io/sproutguard/screen-time-calculator.html';
+      document.getElementById('o4').textContent+' waking years of the life I have left.\n\nWork out yours: '+location.origin+location.pathname+'?h='+hrs.value+'&w='+waste.value+'&a='+age.value;
     var btn=this;
     function ok(){btn.textContent='Copied ✓';setTimeout(function(){btn.textContent='Copy my result';},2000);}
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,function(){window.prompt('Copy your result:',t);});}
