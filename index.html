@@ -69,10 +69,10 @@ h2{font-size:28px;margin-bottom:28px;letter-spacing:-.01em}
 .quote p{font-style:italic;color:var(--fg)}
 .quote cite{display:block;margin-top:10px;font-size:14px;color:var(--muted);font-style:normal}
 ul.checks{list-style:none}
-.shots{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin-top:8px}
-.shots figure{margin:0;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;text-align:center}
-.shots img{width:100%;max-width:200px;height:auto;border-radius:10px;display:block;margin:0 auto}
-.shots figcaption{margin-top:12px;font-size:14px;color:var(--muted)}
+.shots{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin-top:8px;align-items:stretch}
+.shots figure{margin:0;background:#0f141b;border:1px solid var(--border);border-radius:14px;padding:16px;text-align:center;display:flex;flex-direction:column}
+.shots img{width:100%;max-width:200px;height:auto;border-radius:10px;display:block;margin:0 auto;box-shadow:0 0 0 1px rgba(255,255,255,.06),0 8px 24px rgba(0,0,0,.5);opacity:.94}
+.shots figcaption{margin-top:auto;padding-top:12px;font-size:14px;color:var(--muted)}
 ul.checks a{color:var(--accent);text-decoration:none}
 ul.checks li{padding:9px 0 9px 30px;position:relative;color:var(--muted)}
 ul.checks li:before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
