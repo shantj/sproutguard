@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Stop Bypassing Your Own Screen Time Limits (iPhone)</title>
+<meta name="description" content="You set a Screen Time limit and tap Ignore Limit every day. Here is why that happens and the six settings that make your own limits hard to undo.">
+<meta name="keywords" content="stop bypassing screen time, ignore limit screen time, screen time not working, how to make screen time stricter, screen time passcode, lock myself out of apps iphone">
+<link rel="canonical" href="https://shantj.github.io/sproutguard/stop-bypassing-screen-time.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Stop Bypassing Your Own Screen Time Limits">
+<meta property="og:description" content="Why 'Ignore Limit' defeats you every day, and the six settings that make self-imposed limits actually hold.">
+<meta property="og:url" content="https://shantj.github.io/sproutguard/stop-bypassing-screen-time.html">
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"HowTo",
+ "name":"How to stop bypassing your own Screen Time limits on iPhone",
+ "description":"Six configuration changes that make self-imposed iPhone Screen Time limits meaningfully harder to override.",
+ "step":[
+  {"@type":"HowToStep","name":"Set a Screen Time passcode you do not have memorised"},
+  {"@type":"HowToStep","name":"Turn on Block at Downtime so Ignore Limit disappears"},
+  {"@type":"HowToStep","name":"Close the Safari web version loophole"},
+  {"@type":"HowToStep","name":"Block App Store installs so reinstalling is not an escape"},
+  {"@type":"HowToStep","name":"Add friction that costs time, not willpower"},
+  {"@type":"HowToStep","name":"Attach a streak so overriding has a visible cost"}
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {"@type":"Question","name":"How do I disable Ignore Limit on iPhone Screen Time?",
+   "acceptedAnswer":{"@type":"Answer","text":"You cannot remove the Ignore Limit button from App Limits directly, but you can neutralise it. Go to Settings > Screen Time > Downtime and enable Block at Downtime (called Block At Downtime or Block during Downtime depending on iOS version). With that on, apps blocked during a Downtime window require the Screen Time passcode instead of offering a one-tap Ignore. Setting a Screen Time passcode is the single change that matters most."}},
+  {"@type":"Question","name":"Why does Screen Time stop working after a few days?",
+   "acceptedAnswer":{"@type":"Answer","text":"In almost all cases Screen Time is working exactly as configured and the user is overriding it. Without a Screen Time passcode, App Limits are advisory: any limit can be dismissed with one tap on Ignore Limit, and the limit itself can be deleted in about ten seconds. The fix is not a different app, it is adding a passcode and a Downtime window so overriding takes deliberate effort."}},
+  {"@type":"Question","name":"Should someone else hold my Screen Time passcode?",
+   "acceptedAnswer":{"@type":"Answer","text":"It works, but it converts self-control into supervision, and many adults find that arrangement unpleasant enough that they abandon it. A middle path is generating a long random passcode, writing it somewhere physically inconvenient to reach, and not memorising it. The delay is the mechanism; you keep autonomy without keeping instant access."}},
+  {"@type":"Question","name":"Does deleting an app stop me from using it?",
+   "acceptedAnswer":{"@type":"Answer","text":"No. Reinstalling a previously purchased app takes roughly fifteen seconds and no password prompt in many configurations, and your login session is often restored automatically. Deleting apps is the least durable form of blocking. If you want deletion to hold, also disable Installing Apps under Content and Privacy Restrictions so reinstalling requires the Screen Time passcode."}}
+ ]
+}
+</script>
+
+<style>
+:root{--bg:#0d1117;--fg:#e6edf3;--muted:#8b949e;--accent:#3fb950;--card:#161b22;--border:#30363d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+nav{padding:22px 0;border-bottom:1px solid var(--border)}
+nav a{color:var(--accent);text-decoration:none;font-weight:600}
+article{padding:56px 0}
+h1{font-size:clamp(28px,4.5vw,40px);line-height:1.2;margin-bottom:16px;letter-spacing:-.02em}
+.lede{font-size:19px;color:var(--muted);margin-bottom:32px}
+h2{font-size:22px;margin:40px 0 14px;letter-spacing:-.01em}
+h3{font-size:18px;margin:26px 0 10px;color:var(--accent)}
+p{margin-bottom:16px;color:#c9d1d9}
+.callout{background:var(--card);border-left:3px solid var(--accent);padding:18px 22px;border-radius:0 10px 10px 0;margin:22px 0}
+.callout p{margin:0}
+ul,ol{margin:0 0 16px 22px;color:#c9d1d9}
+li{margin-bottom:9px}
+code{background:var(--card);border:1px solid var(--border);border-radius:5px;padding:1px 6px;font-size:14px}
+.cta-box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;margin:44px 0;text-align:center}
+.cta{display:inline-block;background:var(--accent);color:#0d1117;font-weight:700;padding:13px 30px;border-radius:9px;text-decoration:none;margin-top:14px}
+.related{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:22px;margin:36px 0}
+.related a{color:var(--accent);text-decoration:none}
+footer{padding:40px 0;border-top:1px solid var(--border);color:var(--muted);font-size:14px;text-align:center}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap"><a href="/sproutguard/">🌱 SproutGuard</a></div></nav>
+
+<article>
+<div class="wrap">
+
+<h1>How to Stop Bypassing Your Own Screen Time Limits</h1>
+<p class="lede">The limit fires. You tap <em>Ignore Limit</em>. Ninety seconds later you have forgotten it ever appeared. The problem usually isn't that Screen Time is broken — it's that, by default, it asks permission from the exact person it's supposed to be stopping.</p>
+
+<h2>Why the default setup always loses</h2>
+<p>Out of the box, an iPhone App Limit is a suggestion. When it triggers you get a full-screen card with a button that removes it for fifteen minutes, and a second button that removes it for the rest of the day. No passcode, no delay, no record. The decision to override happens in the exact moment your judgement is worst — mid-craving, one tap from relief.</p>
+<p>Every fix below works on the same principle: <strong>move the decision away from the moment of temptation.</strong> Not more willpower — less opportunity to spend it.</p>
+
+<h2>The six changes, in order of impact</h2>
+
+<h3>1. Set a Screen Time passcode (do this one even if you do nothing else)</h3>
+<p><code>Settings &gt; Screen Time &gt; Lock Screen Time Settings</code>. Without this, limits can be deleted outright in about ten seconds, so nothing else on this list holds. Use a code you don't already use elsewhere. Ideally generate four random digits, write them on paper, and put the paper somewhere that takes real effort to reach — a different room, a sealed envelope, a drawer at the office. You keep full control; you just can't exercise it impulsively.</p>
+
+<h3>2. Turn on Block at Downtime</h3>
+<p><code>Settings &gt; Screen Time &gt; Downtime</code>, then enable the block toggle. Apps blocked during a Downtime window ask for the passcode instead of offering the one-tap escape. This is the single setting that converts Screen Time from advisory to real. Set a Downtime window over the hours you actually lose — for most people that's 9pm to 1am, not the workday.</p>
+
+<h3>3. Close the browser loophole</h3>
+<p>App Limits cover apps, not websites. Blocking the Instagram app while <code>instagram.com</code> loads fine in Safari accomplishes almost nothing. Go to <code>Content &amp; Privacy Restrictions &gt; Content Restrictions &gt; Web Content &gt; Limit Adult Websites</code> and add the specific domains under <em>Never Allow</em>. Include the mobile subdomains and the short link domains too.</p>
+
+<h3>4. Block installs so reinstalling isn't the escape hatch</h3>
+<p>Deleting an app feels decisive and lasts about a day, because reinstalling is fifteen seconds and your session usually survives. Under <code>Content &amp; Privacy Restrictions &gt; iTunes &amp; App Store Purchases</code>, set <em>Installing Apps</em> to <em>Don't Allow</em>. Now the reinstall costs a passcode trip too.</p>
+
+<h3>5. Make the friction cost time, not willpower</h3>
+<p>Willpower is depletable and unreliable at 11pm. Time isn't. Every mechanism above works because it inserts a delay — walk to another room, find the paper, type the code. In practice, the urge frequently doesn't survive the walk. That's the whole trick, and it's why a delay of ninety seconds outperforms a promise made in the morning.</p>
+
+<h3>6. Attach something you don't want to lose</h3>
+<p>Restriction alone tends to decay: it's all cost, no reward. A visible streak counter changes the arithmetic — overriding stops being free and starts costing a number you've been building. This is the piece Apple's built-in Screen Time doesn't provide, and the main reason people end up adding a third-party layer on top of it.</p>
+
+<div class="callout"><p><strong>If you only have two minutes:</strong> set a Screen Time passcode, then set one Downtime window with blocking on. Those two changes account for most of the improvement. Everything else on this page is closing side doors.</p></div>
+
+<h2>What to do when you've already overridden it</h2>
+<p>Don't reset the whole system. The common failure pattern is: bypass once, feel like a fraud, delete all the limits, start over from zero next Monday. Treat a single override as data instead — which app, what time, what preceded it. Almost everyone finds their overrides cluster in one predictable window. Tighten that window specifically and leave the rest of the day alone. Narrow rules survive; total lockdowns get deleted.</p>
+
+<div class="cta-box">
+  <strong style="font-size:19px">SproutGuard — self-control, not supervision</strong>
+  <p style="margin-top:10px;color:var(--muted)">Blocking, focus sessions and a daily streak, built on Apple's Screen Time framework. No account, no server, nothing leaves your phone — nobody is watching you, including us.</p>
+  <a class="cta" href="https://apps.apple.com/us/app/sproutguard-screen-time-detox/id6768664921">Download free on iOS</a>
+</div>
+
+<div class="related">
+  <strong>Related reading</strong>
+  <ul style="margin-top:10px">
+    <li><a href="/sproutguard/how-to-block-apps-on-iphone.html">How to block apps on iPhone — every method, ranked</a></li>
+    <li><a href="/sproutguard/block-instagram-on-iphone.html">How to block Instagram on iPhone (and make it stick)</a></li>
+    <li><a href="/sproutguard/how-to-stop-doomscrolling.html">How to stop doomscrolling</a></li>
+    <li><a href="/sproutguard/screen-time-without-parental-controls.html">Screen time apps that aren't parental controls</a></li>
+  </ul>
+</div>
+
+</div>
+</article>
+
+<footer><div class="wrap"><a href="/sproutguard/">← Back to SproutGuard</a></div></footer>
+
+</body>
+</html>

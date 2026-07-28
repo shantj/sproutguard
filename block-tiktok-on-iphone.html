@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Block TikTok on iPhone (Every Method, and Where Each Fails)</title>
+<meta name="description" content="Block TikTok on iPhone with Screen Time, Downtime, or a third-party blocker — plus the loopholes that quietly undo it and how to close them.">
+<meta name="keywords" content="how to block tiktok on iphone, block tiktok app, tiktok screen time limit, stop using tiktok, tiktok addiction, block tiktok website">
+<link rel="canonical" href="https://shantj.github.io/sproutguard/block-tiktok-on-iphone.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Block TikTok on iPhone (And Make It Stick)">
+<meta property="og:description" content="Every method, plus the loopholes that quietly undo your block.">
+<meta property="og:url" content="https://shantj.github.io/sproutguard/block-tiktok-on-iphone.html">
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"HowTo",
+ "name":"How to block TikTok on iPhone",
+ "description":"Block the TikTok app and tiktok.com on iPhone using Screen Time App Limits, Downtime, Content Restrictions, or a third-party on-device blocker.",
+ "step":[
+  {"@type":"HowToStep","name":"Set a one-minute App Limit on TikTok"},
+  {"@type":"HowToStep","name":"Block tiktok.com under Web Content restrictions"},
+  {"@type":"HowToStep","name":"Add a Downtime window with blocking enabled"},
+  {"@type":"HowToStep","name":"Close the reinstall and in-app-browser loopholes"}
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {"@type":"Question","name":"How do I block TikTok on my iPhone permanently?",
+   "acceptedAnswer":{"@type":"Answer","text":"There is no absolutely permanent block on a phone you own, but you can get close. Set a Screen Time App Limit of one minute on TikTok, set a Screen Time passcode you have not memorised, add tiktok.com to Never Allow under Web Content, and disable Installing Apps so reinstalling is not a fifteen-second escape. Each of those closes one of the four ways a TikTok block normally gets undone."}},
+  {"@type":"Question","name":"Why can I still watch TikTok after blocking the app?",
+   "acceptedAnswer":{"@type":"Answer","text":"Because App Limits apply only to the app. tiktok.com in Safari or Chrome is a separate surface and works fine, and TikTok links opened inside other apps' built-in browsers can also bypass an app-level block. Add tiktok.com and its mobile subdomains to Never Allow under Settings, Screen Time, Content and Privacy Restrictions, Content Restrictions, Web Content."}},
+  {"@type":"Question","name":"Is there a free way to block TikTok on iPhone?",
+   "acceptedAnswer":{"@type":"Answer","text":"Yes. Apple's built-in Screen Time blocks TikTok at the system level for free and requires no third-party app. Third-party blockers add things Screen Time does not have, such as one-tap session presets and a streak counter, but the free built-in path is genuinely sufficient for many people and should be tried first."}},
+  {"@type":"Question","name":"Does blocking TikTok tell anyone or share my data?",
+   "acceptedAnswer":{"@type":"Answer","text":"Screen Time restrictions you set for yourself stay on your device unless you have joined a Family Sharing group with an organiser who manages your settings. Third-party blockers vary: any app that requires an account is sending some usage information off your phone. Apps built purely on Apple's on-device Family Controls API can block without an account or server at all."}}
+ ]
+}
+</script>
+
+<style>
+:root{--bg:#0d1117;--fg:#e6edf3;--muted:#8b949e;--accent:#3fb950;--card:#161b22;--border:#30363d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+nav{padding:22px 0;border-bottom:1px solid var(--border)}
+nav a{color:var(--accent);text-decoration:none;font-weight:600}
+article{padding:56px 0}
+h1{font-size:clamp(28px,4.5vw,40px);line-height:1.2;margin-bottom:16px;letter-spacing:-.02em}
+.lede{font-size:19px;color:var(--muted);margin-bottom:32px}
+h2{font-size:22px;margin:40px 0 14px;letter-spacing:-.01em}
+h3{font-size:18px;margin:26px 0 10px;color:var(--accent)}
+p{margin-bottom:16px;color:#c9d1d9}
+.callout{background:var(--card);border-left:3px solid var(--accent);padding:18px 22px;border-radius:0 10px 10px 0;margin:22px 0}
+.callout p{margin:0}
+ul,ol{margin:0 0 16px 22px;color:#c9d1d9}
+li{margin-bottom:9px}
+code{background:var(--card);border:1px solid var(--border);border-radius:5px;padding:1px 6px;font-size:14px}
+table{width:100%;border-collapse:collapse;margin:22px 0;font-size:15px}
+th,td{border:1px solid var(--border);padding:10px 12px;text-align:left;color:#c9d1d9}
+th{background:var(--card);color:var(--fg)}
+.cta-box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;margin:44px 0;text-align:center}
+.cta{display:inline-block;background:var(--accent);color:#0d1117;font-weight:700;padding:13px 30px;border-radius:9px;text-decoration:none;margin-top:14px}
+.related{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:22px;margin:36px 0}
+.related a{color:var(--accent);text-decoration:none}
+footer{padding:40px 0;border-top:1px solid var(--border);color:var(--muted);font-size:14px;text-align:center}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap"><a href="/sproutguard/">🌱 SproutGuard</a></div></nav>
+
+<article>
+<div class="wrap">
+
+<h1>How to Block TikTok on iPhone</h1>
+<p class="lede">Most guides list the same four taps and stop. The interesting part is what happens on day three, when the block is technically still on and you're somehow watching TikTok anyway. Here's the full method plus the four loopholes that undo it.</p>
+
+<h2>The fastest method (2 minutes)</h2>
+<ol>
+  <li>Open <code>Settings &gt; Screen Time &gt; App Limits &gt; Add Limit</code>.</li>
+  <li>Choose <strong>Social</strong>, then tap <em>Edit Apps</em> and select only TikTok — otherwise you'll block messaging too and delete the limit out of frustration by Tuesday.</li>
+  <li>Set the limit to <strong>1 minute</strong>. Not zero — the minimum is one minute, and that's effectively a block.</li>
+  <li>Set <code>Lock Screen Time Settings</code> with a passcode. <strong>Skip this and the whole thing is decorative.</strong></li>
+</ol>
+
+<h2>The four loopholes</h2>
+
+<h3>1. tiktok.com in the browser</h3>
+<p>App Limits apply to the app binary, not the website. The web player works, and this is the single most common way a TikTok block quietly dies. Fix: <code>Content &amp; Privacy Restrictions &gt; Content Restrictions &gt; Web Content &gt; Limit Adult Websites</code>, then add <code>tiktok.com</code> under <em>Never Allow</em>. Add <code>www.tiktok.com</code> and <code>vm.tiktok.com</code> separately — the short-link domain is what friends actually send you.</p>
+
+<h3>2. Ignore Limit</h3>
+<p>When the limit triggers you get a one-tap escape. It's not removable, but you can neutralise it: put a <strong>Downtime</strong> window over your danger hours and turn on the block toggle. Apps blocked by Downtime demand the passcode rather than offering an easy override.</p>
+
+<h3>3. Reinstalling</h3>
+<p>Deleting TikTok is the block people try first and it lasts about a day, because redownloading a previously installed app takes fifteen seconds and your session is usually restored. Fix: <code>Content &amp; Privacy Restrictions &gt; iTunes &amp; App Store Purchases &gt; Installing Apps &gt; Don't Allow</code>.</p>
+
+<h3>4. In-app browsers</h3>
+<p>A TikTok link tapped inside a messaging app may open in that app's embedded browser, which doesn't always inherit the same restrictions. There's no clean toggle for this. The practical mitigation is the web-content block above, which applies broadly, plus the habit of not opening video links from chat at all.</p>
+
+<h2>Which method should you use?</h2>
+<table>
+<tr><th>Method</th><th>Strength</th><th>Fails when</th></tr>
+<tr><td>App Limit, no passcode</td><td>30 seconds to set up</td><td>Immediately — one tap removes it</td></tr>
+<tr><td>App Limit + passcode</td><td>Real friction</td><td>You memorised the passcode</td></tr>
+<tr><td>Downtime + block toggle</td><td>Strongest built-in option</td><td>Your danger hours are unpredictable</td></tr>
+<tr><td>Delete the app</td><td>Feels decisive</td><td>Day two, at the App Store</td></tr>
+<tr><td>Third-party blocker</td><td>Adds sessions + streak motivation</td><td>It demands an account or a weekly subscription</td></tr>
+</table>
+
+<div class="callout"><p><strong>The honest version:</strong> Apple's free built-in tools can block TikTok completely. What they can't do is make you want to keep the block. That's a motivation problem, not a technical one — and it's why a visible streak, something you lose by overriding, tends to outlast pure restriction.</p></div>
+
+<h2>Set a replacement, not just a wall</h2>
+<p>TikTok fills a specific slot: seconds of dead time with no cognitive load. Block it without putting something in that slot and you'll migrate to Reels or Shorts within a week — the same behaviour with a different logo. Decide in advance what occupies that slot, and make it require no setup. A downloaded podcast, a book on the phone, an actual walk. The blocking is the easy half.</p>
+
+<div class="cta-box">
+  <strong style="font-size:19px">SproutGuard — block yourself, not your kids</strong>
+  <p style="margin-top:10px;color:var(--muted)">Blocking, focus sessions and a daily streak on top of Apple's Screen Time framework. No account, no cloud, nothing leaves your phone.</p>
+  <a class="cta" href="https://apps.apple.com/us/app/sproutguard-screen-time-detox/id6768664921">Download free on iOS</a>
+</div>
+
+<div class="related">
+  <strong>Related reading</strong>
+  <ul style="margin-top:10px">
+    <li><a href="/sproutguard/block-instagram-on-iphone.html">How to block Instagram on iPhone</a></li>
+    <li><a href="/sproutguard/stop-bypassing-screen-time.html">How to stop bypassing your own Screen Time limits</a></li>
+    <li><a href="/sproutguard/how-to-block-apps-on-iphone.html">How to block apps on iPhone — every method, ranked</a></li>
+    <li><a href="/sproutguard/app-blocker-without-subscription.html">App blockers without a subscription</a></li>
+  </ul>
+</div>
+
+</div>
+</article>
+
+<footer><div class="wrap"><a href="/sproutguard/">← Back to SproutGuard</a></div></footer>
+
+</body>
+</html>
