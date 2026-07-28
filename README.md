@@ -51,6 +51,12 @@ You can — it's your phone. The streak is the point: friction plus a number you
 
 ---
 
+## Free tool
+
+**[Screen time calculator](https://shantj.github.io/sproutguard/screen-time-calculator.html)** — enter your daily hours, see them as full days per year and as waking years of the life you have left. No sign-up; the arithmetic runs client-side in your browser, nothing is transmitted. ([the maths, explained](https://gist.github.com/shantj/495f7495cf007508879a023cc3dd1bbc))
+
+---
+
 ## Guides
 
 Free, no-signup guides published alongside the app:
