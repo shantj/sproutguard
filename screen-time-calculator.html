@@ -258,7 +258,7 @@ footer{padding:48px 0 68px;text-align:center;color:var(--muted);font-size:14px;b
     else if(years<2){ v='Around '+fmt(years,1)+' waking years. Roughly a long sabbatical, spent in ninety-second instalments.'; }
     else if(years<5){ v='About '+fmt(years,1)+' waking years — comparable to a full university degree, handed over in pieces too small to notice.'; }
     else if(years<10){ v=fmt(years,1)+' waking years. That is longer than most careers spend at any single employer.'; }
-    else { v=fmt(years,1)+' waking years — over a decade of conscious life, at your current rate. This is the range where the daily number has stopped being a useful unit.'; }
+    else { v=fmt(years,1)+' waking years of conscious life, at your current rate. Past ten years the daily figure has stopped being a useful unit — this is a structural problem, not a discipline one.'; }
     document.getElementById('verdict').textContent=v;
   }
   [hrs,waste,age].forEach(function(el){el.addEventListener('input',calc);});
