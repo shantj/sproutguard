@@ -69,6 +69,10 @@ h2{font-size:28px;margin-bottom:28px;letter-spacing:-.01em}
 .quote p{font-style:italic;color:var(--fg)}
 .quote cite{display:block;margin-top:10px;font-size:14px;color:var(--muted);font-style:normal}
 ul.checks{list-style:none}
+.shots{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin-top:8px}
+.shots figure{margin:0;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;text-align:center}
+.shots img{width:100%;max-width:200px;height:auto;border-radius:10px;display:block;margin:0 auto}
+.shots figcaption{margin-top:12px;font-size:14px;color:var(--muted)}
 ul.checks a{color:var(--accent);text-decoration:none}
 ul.checks li{padding:9px 0 9px 30px;position:relative;color:var(--muted)}
 ul.checks li:before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
@@ -111,6 +115,19 @@ footer a{color:var(--accent)}
       <div class="card"><h3>Focus sessions</h3><p>Start a session and stay locked in until you're done. No negotiating with yourself mid-task.</p></div>
       <div class="card"><h3>Streaks that stick</h3><p>Build a daily streak. Watching the number climb is what turns a good intention into a habit.</p></div>
       <div class="card"><h3>Watch the hours drop</h3><p>See your real usage and watch it fall week over week. Progress you can actually point at.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>See it</h2>
+    <p style="color:var(--muted);margin-bottom:26px">Your day, your streak, your call — all on your phone.</p>
+    <div class="shots">
+      <figure><img src="img/shot-1-master-time.png" alt="SproutGuard home screen showing daily screen time, pickups and top distracting apps" loading="lazy"><figcaption>Where your day actually went</figcaption></figure>
+      <figure><img src="img/shot-5-limit-apps.png" alt="Blocking distracting apps with a mindful pause challenge" loading="lazy"><figcaption>A wall, plus a pause</figcaption></figure>
+      <figure><img src="img/shot-3-schedules.png" alt="Focus schedules for work, family time, dinner and bedtime" loading="lazy"><figcaption>Focus schedules</figcaption></figure>
+      <figure><img src="img/shot-4-progress.png" alt="Weekly progress tracking and habit streaks" loading="lazy"><figcaption>Streaks that stick</figcaption></figure>
     </div>
   </div>
 </section>
