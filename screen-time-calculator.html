@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Screen Time Calculator — How Many Years Will You Spend on Your Phone?</title>
+<meta name="description" content="Free screen time calculator. Enter your daily hours and see how many days per year and years of your remaining life go to your phone. No sign-up, nothing sent anywhere — the math runs in your browser.">
+<meta name="keywords" content="screen time calculator, phone usage calculator, how much time do i spend on my phone, screen time per year, doomscrolling calculator, social media time calculator">
+<link rel="canonical" href="https://shantj.github.io/sproutguard/screen-time-calculator.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Screen Time Calculator — how many years go to your phone?">
+<meta property="og:description" content="Enter your daily screen time. See the number in days per year and years of your remaining life. Runs entirely in your browser.">
+<meta property="og:url" content="https://shantj.github.io/sproutguard/screen-time-calculator.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Screen Time Calculator — how many years go to your phone?">
+<meta name="twitter:description" content="Enter your daily screen time. See it in days per year and years of your life.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Screen Time Calculator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "A free calculator that converts daily phone screen time into days per year and years of remaining life. All computation happens client-side.",
+  "url": "https://shantj.github.io/sproutguard/screen-time-calculator.html"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"How much screen time is too much?",
+     "acceptedAnswer":{"@type":"Answer","text":"There is no clinical threshold that applies to everyone, because an hour of video calls with family is not the same as an hour of doomscrolling. A more useful test than total hours is whether the time was chosen or drifted into. Check your iPhone's Settings > Screen Time breakdown: the categories you cannot remember opening are the ones worth cutting."}},
+    {"@type":"Question","name":"What is the average daily screen time?",
+     "acceptedAnswer":{"@type":"Answer","text":"Widely cited survey estimates put average adult smartphone use somewhere between three and five hours per day, with social and video apps taking the largest share. Self-reported figures tend to run lower than what the phone actually measures, so check your device's own Screen Time report rather than guessing."}},
+    {"@type":"Question","name":"Does this calculator send my data anywhere?",
+     "acceptedAnswer":{"@type":"Answer","text":"No. The arithmetic runs in JavaScript in your own browser. There is no server call, no account, no analytics event and no cookie tied to the numbers you type."}},
+    {"@type":"Question","name":"How do I actually reduce my screen time?",
+     "acceptedAnswer":{"@type":"Answer","text":"Reducing screen time by intention alone rarely works, because the decision point arrives hundreds of times a day and you only need to lose once. What works better is removing the decision: block the specific apps at the system level, and make the block harder to undo than the urge is strong."}}
+  ]
+}
+</script>
+
+<style>
+:root{--bg:#0d1117;--fg:#e6edf3;--muted:#8b949e;--accent:#3fb950;--card:#161b22;--border:#30363d;--warn:#f0883e}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+header{padding:72px 0 40px;text-align:center}
+.logo{font-size:38px;margin-bottom:10px}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.15;letter-spacing:-.02em;margin-bottom:16px;font-weight:700}
+h1 .hl{color:var(--accent)}
+.sub{font-size:18px;color:var(--muted);max-width:560px;margin:0 auto}
+section{padding:44px 0;border-top:1px solid var(--border)}
+h2{font-size:25px;margin-bottom:20px;letter-spacing:-.01em}
+h3{font-size:18px;margin:26px 0 8px}
+p{color:var(--muted);margin-bottom:14px}
+p strong,li strong{color:var(--fg)}
+a{color:var(--accent)}
+.calc{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px;margin-top:8px}
+.row{margin-bottom:22px}
+.row label{display:block;font-weight:600;color:var(--fg);margin-bottom:8px;font-size:15px}
+.row .val{color:var(--accent);font-weight:700}
+input[type=range]{width:100%;accent-color:var(--accent)}
+input[type=number]{width:100%;background:var(--bg);border:1px solid var(--border);color:var(--fg);border-radius:8px;padding:10px 12px;font:inherit}
+.out{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:26px}
+.stat{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:18px}
+.stat .big{font-size:30px;font-weight:700;color:var(--accent);line-height:1.2}
+.stat .lbl{font-size:13px;color:var(--muted);margin-top:4px}
+.stat.hero .big{color:var(--warn);font-size:38px}
+.verdict{margin-top:22px;padding:18px 20px;background:var(--bg);border-left:3px solid var(--warn);border-radius:0 10px 10px 0}
+.verdict p{color:var(--fg);margin:0}
+.cta{display:inline-block;background:var(--accent);color:#0d1117;font-weight:700;padding:14px 30px;border-radius:10px;text-decoration:none;font-size:16px;margin-top:8px}
+.btn2{display:inline-block;background:transparent;border:1px solid var(--border);color:var(--fg);font-weight:600;padding:12px 22px;border-radius:10px;font:inherit;cursor:pointer;margin-top:8px}
+.note{font-size:14px;color:var(--muted);margin-top:12px}
+ul{color:var(--muted);padding-left:22px;margin-bottom:14px}
+li{margin-bottom:8px}
+.faq dt{font-weight:600;margin-top:20px;color:var(--fg)}
+.faq dd{color:var(--muted);margin-top:6px}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border)}
+th{color:var(--fg);font-size:14px}
+td{color:var(--muted)}
+footer{padding:48px 0 68px;text-align:center;color:var(--muted);font-size:14px;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">🌱</div>
+    <h1>Screen time calculator:<br><span class="hl">what is it actually costing you?</span></h1>
+    <p class="sub">Daily hours are easy to shrug off. The same number expressed in <em>days per year</em> and <em>years of the life you have left</em> is considerably harder to shrug off.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="calc">
+      <div class="row">
+        <label for="hrs">Daily screen time: <span class="val" id="hrsv">4.0 hours</span></label>
+        <input type="range" id="hrs" min="0.5" max="12" step="0.25" value="4">
+      </div>
+      <div class="row">
+        <label for="waste">Of that, roughly what share is time you'd take back if you could? <span class="val" id="wastev">60%</span></label>
+        <input type="range" id="waste" min="0" max="100" step="5" value="60">
+      </div>
+      <div class="row">
+        <label for="age">Your age</label>
+        <input type="number" id="age" min="10" max="99" value="30">
+      </div>
+
+      <div class="out">
+        <div class="stat"><div class="big" id="o1">—</div><div class="lbl">hours per year on your phone</div></div>
+        <div class="stat"><div class="big" id="o2">—</div><div class="lbl">full 24-hour days per year</div></div>
+        <div class="stat"><div class="big" id="o3">—</div><div class="lbl">waking weeks per year</div></div>
+        <div class="stat hero"><div class="big" id="o4">—</div><div class="lbl">years of your remaining life, at this rate</div></div>
+      </div>
+
+      <div class="verdict"><p id="verdict">—</p></div>
+
+      <button class="btn2" id="copy">Copy my result</button>
+      <p class="note">Nothing you type here is sent anywhere. The arithmetic runs in your browser; there is no server behind this page.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>How the numbers are calculated</h2>
+    <p>No hidden weighting, no fudge factor. Every figure above comes from four lines of arithmetic:</p>
+    <table>
+      <tr><th>Figure</th><th>Formula</th></tr>
+      <tr><td>Hours per year</td><td>daily hours × 365</td></tr>
+      <tr><td>Days per year</td><td>hours per year ÷ 24</td></tr>
+      <tr><td>Waking weeks per year</td><td>hours per year ÷ 16 ÷ 7 <span style="color:var(--fg)">(a 16-hour waking day)</span></td></tr>
+      <tr><td>Years of remaining life</td><td>(reclaimable hours per year × years remaining) ÷ (365 × 16)</td></tr>
+    </table>
+    <p>Years remaining assumes a life expectancy of 80. The final figure counts only the share you marked as <em>time you'd take back</em> — hours spent on calls, maps, music or work are not being counted against you. And it is measured in <strong>waking</strong> years, not calendar years, because the eight hours a day you spend asleep were never yours to spend anyway.</p>
+    <p>That last choice is the one that makes the number land. Two hours a day sounds like a rounding error. Two hours a day of the roughly sixteen you are actually awake is <strong>one-eighth of your conscious life</strong>, and you would notice immediately if someone took an eighth of your salary.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Why the daily number fools everyone</h2>
+    <p>Screen time is uniquely bad at feeling expensive, for three structural reasons:</p>
+    <h3>1. It is paid in change, never in notes</h3>
+    <p>Nobody sits down for a four-hour scrolling session. It arrives as ninety seconds in a lift, four minutes in a queue, eleven minutes in bed. Each individual withdrawal is genuinely trivial, so there is never a moment where you feel the cost — and the total only exists in a weekly report you have learned to swipe past.</p>
+    <h3>2. The comparison class is wrong</h3>
+    <p>Four hours a day gets mentally filed next to "watched a film". It should be filed next to "took a second job". At four hours a day you are working a 28-hour week, unpaid, for a company whose revenue depends on you not noticing.</p>
+    <h3>3. The alternative is invisible</h3>
+    <p>You never see what the reclaimed time would have become, so it never feels lost. Ten minutes a day is a language in four years. Thirty minutes a day is a marathon. An hour a day is, for most people, roughly the gap between wanting to write something and having written it.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What the number is good for — and what it isn't</h2>
+    <p>An honest caveat, because calculators like this are easy to misuse:</p>
+    <ul>
+      <li><strong>Not all screen time is loss.</strong> A video call with someone you love and forty minutes on a stranger's argument are both "screen time" and are not remotely the same thing. That is exactly what the second slider is for.</li>
+      <li><strong>Guilt is not a strategy.</strong> Seeing a large number produces a burst of motivation that reliably decays within about 48 hours. If nothing structural changes in that window, the number changes nothing.</li>
+      <li><strong>Self-reported hours are usually wrong.</strong> People underestimate their own usage by a wide margin. Before trusting your slider position, open <em>Settings → Screen Time</em> on iPhone and use the figure your phone recorded, not the one you remember.</li>
+    </ul>
+    <p>The single useful thing a number like this does is convert an abstract habit into a concrete quantity — and quantities are the only things you can actually take aim at.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What actually moves the number</h2>
+    <p>Intention alone almost never does, and the reason is structural rather than moral. The decision to open the app arrives several hundred times a day. To keep the habit you need to win every single one of those; to lose it you need to lose once. Nobody has that hit rate, and the failure is arithmetic rather than weakness.</p>
+    <p>What does work is removing the decision entirely:</p>
+    <ul>
+      <li><strong>Block at the system level, not the app level.</strong> An in-app timer you can dismiss is a suggestion. iOS Screen Time blocks at the OS layer, which is a different category of obstacle.</li>
+      <li><strong>Close the loopholes.</strong> Most people block the app and leave the mobile website, the in-app browser, and the "Ignore Limit" button wide open. <a href="/sproutguard/stop-bypassing-screen-time.html">The six settings that close them</a> matter more than the block itself.</li>
+      <li><strong>Attach it to a streak.</strong> Once you have a run of days, the cost of opening the app stops being "ten minutes" and starts being "the streak". That is a far better price tag, and it is the whole reason streak mechanics work.</li>
+      <li><strong>Start with one app, not all of them.</strong> Blocking everything on day one fails within a week. Pick the single app your Screen Time report says is the worst offender and beat that one first.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>If you want the block, not just the number</h2>
+    <p><strong>SproutGuard</strong> is a free iOS app that does the part this page cannot: it puts the wall up. It runs on Apple's Screen Time framework, so blocking happens at system level and entirely on-device — no account, no cloud, no server that could receive your usage even in principle. It is built for adults blocking themselves, not for parents monitoring anyone.</p>
+    <p style="text-align:center;margin-top:22px"><a class="cta" href="https://apps.apple.com/us/app/sproutguard-screen-time-detox/id6768664921">Get SproutGuard — free on iOS</a></p>
+    <p class="note" style="text-align:center">Disclosure: this calculator is published by the developer of SproutGuard. The calculator itself is free, standalone, and works whether or not you install anything.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Common questions</h2>
+    <dl class="faq">
+      <dt>How much screen time is too much?</dt>
+      <dd>There is no clinical threshold that applies to everyone, because an hour of video calls with family is not the same as an hour of doomscrolling. A more useful test than total hours is whether the time was chosen or drifted into. Check your iPhone's Screen Time breakdown: the categories you cannot remember opening are the ones worth cutting.</dd>
+      <dt>What is the average daily screen time?</dt>
+      <dd>Widely cited survey estimates put average adult smartphone use somewhere between three and five hours per day, with social and video apps taking the largest share. Self-reported figures run lower than what the phone actually measures, so trust your device's report over your memory.</dd>
+      <dt>Does this calculator send my data anywhere?</dt>
+      <dd>No. The arithmetic runs in JavaScript in your own browser. There is no server call, no account, no analytics event and no cookie tied to the numbers you type. You can disconnect from the network and the page still works.</dd>
+      <dt>How do I actually reduce my screen time?</dt>
+      <dd>Remove the decision rather than trying to win it. Block the specific apps at system level, close the loopholes that quietly undo the block, and attach the result to a streak so that relapsing has a visible price.</dd>
+    </dl>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Related reading</h2>
+    <ul>
+      <li><a href="/sproutguard/how-to-stop-doomscrolling.html">How to stop doomscrolling</a> — 7 things that work when willpower doesn't.</li>
+      <li><a href="/sproutguard/stop-bypassing-screen-time.html">How to stop bypassing your own limits</a> — why "Ignore Limit" wins, and the six settings that beat it.</li>
+      <li><a href="/sproutguard/how-to-block-apps-on-iphone.html">How to block apps on iPhone</a> — all four methods, and exactly how each fails.</li>
+      <li><a href="/sproutguard/best-app-blockers-for-adults.html">Best app blockers for adults</a> — an honest comparison.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><a href="/sproutguard/">← SproutGuard — screen time detox for adults</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var hrs=document.getElementById('hrs'),waste=document.getElementById('waste'),age=document.getElementById('age');
+  var LIFE=80, WAKE=16;
+  function fmt(n,d){return n.toLocaleString(undefined,{minimumFractionDigits:d,maximumFractionDigits:d});}
+  function calc(){
+    var h=parseFloat(hrs.value)||0;
+    var w=(parseFloat(waste.value)||0)/100;
+    var a=parseFloat(age.value); if(!isFinite(a)||a<1){a=30;}
+    var perYear=h*365;
+    var days=perYear/24;
+    var weeks=perYear/WAKE/7;
+    var left=Math.max(LIFE-a,0);
+    var years=(perYear*w*left)/(365*WAKE);
+
+    document.getElementById('hrsv').textContent=fmt(h,2).replace(/\.00$/,'')+' hours';
+    document.getElementById('wastev').textContent=Math.round(w*100)+'%';
+    document.getElementById('o1').textContent=fmt(perYear,0);
+    document.getElementById('o2').textContent=fmt(days,1);
+    document.getElementById('o3').textContent=fmt(weeks,1);
+    document.getElementById('o4').textContent=fmt(years,1);
+
+    var v;
+    if(left<=0){ v='At 80 or beyond, the remaining-life figure stops being the useful one. The days-per-year number is the one to look at.'; }
+    else if(years<0.5){ v='Under half a waking year. Whatever you are doing, it is working — this is well below where most people land.'; }
+    else if(years<2){ v='Around '+fmt(years,1)+' waking years. Roughly a long sabbatical, spent in ninety-second instalments.'; }
+    else if(years<5){ v='About '+fmt(years,1)+' waking years — comparable to a full university degree, handed over in pieces too small to notice.'; }
+    else if(years<10){ v=fmt(years,1)+' waking years. That is longer than most careers spend at any single employer.'; }
+    else { v=fmt(years,1)+' waking years — over a decade of conscious life, at your current rate. This is the range where the daily number has stopped being a useful unit.'; }
+    document.getElementById('verdict').textContent=v;
+  }
+  [hrs,waste,age].forEach(function(el){el.addEventListener('input',calc);});
+  calc();
+
+  document.getElementById('copy').addEventListener('click',function(){
+    var t='At '+document.getElementById('hrsv').textContent+' of screen time a day, I spend '+
+      document.getElementById('o2').textContent+' full days a year on my phone — and '+
+      document.getElementById('o4').textContent+' waking years of the life I have left.\n\nWork out yours: https://shantj.github.io/sproutguard/screen-time-calculator.html';
+    var btn=this;
+    function ok(){btn.textContent='Copied ✓';setTimeout(function(){btn.textContent='Copy my result';},2000);}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,function(){window.prompt('Copy your result:',t);});}
+    else{window.prompt('Copy your result:',t);}
+  });
+})();
+</script>
+</body>
+</html>
