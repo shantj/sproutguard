@@ -55,6 +55,8 @@ You can — it's your phone. The streak is the point: friction plus a number you
 
 **[Screen time calculator](https://shantj.github.io/sproutguard/screen-time-calculator.html)** — enter your daily hours, see them as full days per year and as waking years of the life you have left. No sign-up; the arithmetic runs client-side in your browser, nothing is transmitted. ([the maths, explained](https://gist.github.com/shantj/495f7495cf007508879a023cc3dd1bbc))
 
+**[asorank](https://github.com/shantj/asorank)** — an open-source CLI that checks where any iOS app ranks in App Store search, for any keyword. No API key, no account, no dependencies, MIT licensed. Built while working out why nobody could find this app; released free because the "where do I rank right now" part of ASO shouldn't cost $30/month.
+
 ---
 
 ## Guides
