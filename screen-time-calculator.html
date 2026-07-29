@@ -139,6 +139,18 @@ footer{padding:48px 0 68px;text-align:center;color:var(--muted);font-size:14px;b
 
 <section>
   <div class="wrap">
+    <h2>Put this calculator on your own site</h2>
+    <p>If you write about digital wellbeing, focus, or attention, you are welcome to embed this. It is free, there is no attribution requirement, no tracking script, no cookie, and no request back to me — the widget is a single static file and the arithmetic runs on your reader's device. Copy the snippet:</p>
+    <div class="callout">
+      <textarea id="embedcode" readonly rows="4" style="width:100%;background:#0f1511;color:#e8f0ea;border:1px solid #2c3a30;border-radius:8px;padding:12px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;line-height:1.5;resize:vertical;"></textarea>
+      <button class="btn2" id="embedcopy" style="margin-top:10px">Copy embed code</button>
+    </div>
+    <p style="font-size:0.95rem">The iframe posts its height to the parent window (<code>event.data.sproutguardEmbedHeight</code>) if you want to auto-size it; otherwise the fixed 560px height above works at every width. The widget shows a single number — the full breakdown stays here.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <h2>How the numbers are calculated</h2>
     <p>No hidden weighting, no fudge factor. Every figure above comes from four lines of arithmetic:</p>
     <table>
@@ -285,6 +297,22 @@ footer{padding:48px 0 68px;text-align:center;color:var(--muted);font-size:14px;b
   readUrl();
   [hrs,waste,age].forEach(function(el){el.addEventListener('input',function(){calc();syncUrl();});});
   calc();
+
+  var EMBED='<iframe src="https://shantj.github.io/sproutguard/embed.html" '
+    +'width="100%" height="560" style="border:0;max-width:600px" '
+    +'loading="lazy" title="Screen time calculator"></iframe>';
+  var ta=document.getElementById('embedcode');
+  if(ta){ta.value=EMBED;}
+  var ec=document.getElementById('embedcopy');
+  if(ec){
+    ec.addEventListener('click',function(){
+      var b=this;
+      function ok(){b.textContent='Embed code copied ✓';setTimeout(function(){b.textContent='Copy embed code';},2000);}
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(EMBED).then(ok,function(){ta.select();ok();});
+      }else{ta.select();ok();}
+    });
+  }
 
   document.getElementById('link').addEventListener('click',function(){
     syncUrl();
