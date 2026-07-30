@@ -2,7 +2,7 @@
 
 **Block yourself. Not your kids.**
 
-[**→ Download free on the App Store**](https://apps.apple.com/us/app/sproutguard-screen-time-detox/id6768664921) · [Landing page](https://shantj.github.io/sproutguard/)
+[**→ Download free on the App Store**](https://apps.apple.com/app/id6768664921?ct=github-readme) · [Landing page](https://shantj.github.io/sproutguard/)
 
 ---
 
