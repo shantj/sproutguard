@@ -32,7 +32,8 @@
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "SproutGuard - Screen Time Detox",
-  "operatingSystem": "iOS",
+  "operatingSystem": "iOS 18.0 or later",
+  "softwareVersion": "2.3.1",
   "applicationCategory": "ProductivityApplication",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "description": "A screen time blocker for adults who want to block themselves. No account, no cloud, entirely on-device via Apple Screen Time.",
@@ -52,7 +53,9 @@
     {"@type":"Question","name":"How does SproutGuard block apps?",
      "acceptedAnswer":{"@type":"Answer","text":"It is built on Apple's Screen Time framework (Family Controls and Managed Settings), so blocking happens at the system level and entirely on-device."}},
     {"@type":"Question","name":"Is SproutGuard free?",
-     "acceptedAnswer":{"@type":"Answer","text":"Yes. Blocking, focus sessions and streaks are free. There is an optional Pro upgrade for power features."}}
+     "acceptedAnswer":{"@type":"Answer","text":"Yes. Blocking, focus sessions and streaks are free. Premium (unlimited rules, weekly insights) is an optional auto-renewing subscription."}},
+    {"@type":"Question","name":"What iPhone and iOS version does SproutGuard need?",
+     "acceptedAnswer":{"@type":"Answer","text":"SproutGuard requires an iPhone running iOS 18.0 or later. It is iPhone-only — there is no iPad app yet. The iOS 18 floor exists because the app is built on the newer Apple Screen Time (Family Controls and Managed Settings) capabilities it uses for on-device blocking."}}
   ]
 }
 </script>
@@ -167,7 +170,9 @@ footer a{color:var(--accent)}
       <dt>How does the blocking work?</dt>
       <dd>It's built on Apple's own Screen Time framework, so blocking happens at the system level, entirely on-device.</dd>
       <dt>Is it free?</dt>
-      <dd>Yes. The core — blocking, focus sessions, streaks — is free. There's an optional Pro upgrade for power features.</dd>
+      <dd>Yes. The core — blocking, focus sessions, streaks — is free. Premium — unlimited rules and weekly insights — is an optional auto-renewing subscription. The free tier is not a trial and does not expire.</dd>
+      <dt>What do I need to run it?</dt>
+      <dd>An iPhone on <strong>iOS 18 or later</strong>. It's iPhone-only right now — there's no iPad app yet. Worth checking before you tap Get.</dd>
       <dt>What if I just turn it off?</dt>
       <dd>You can. It's your phone and your call. The streak is the point: the friction plus the number you don't want to reset is what actually changes behavior.</dd>
     </dl>
@@ -182,7 +187,7 @@ footer a{color:var(--accent)}
       <div class="card"><h3>2 · Pick your apps</h3><p>Choose the exact apps that eat your evening. Apple's own picker — SproutGuard never sees which ones you chose.</p></div>
       <div class="card"><h3>3 · Start a session</h3><p>The wall goes up at the system level. Your streak starts counting the same day.</p></div>
     </div>
-    <p style="color:var(--muted);margin-top:20px">Works on iOS 16 and later. Requires granting Screen Time permission — that's Apple's system prompt, and it's what makes blocking real instead of advisory.</p>
+    <p style="color:var(--muted);margin-top:20px">Requires iPhone on iOS 18 or later (iPad is not supported yet). Requires granting Screen Time permission — that's Apple's system prompt, and it's what makes blocking real instead of advisory.</p>
   </div>
 </section>
 
