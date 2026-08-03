@@ -101,7 +101,10 @@ ul{color:var(--muted);padding-left:22px;margin-bottom:14px}
 li{margin-bottom:8px}
 .faq dt{font-weight:600;margin-top:20px;color:var(--fg)}
 .faq dd{color:var(--muted);margin-top:6px}
-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+table{width:100%;border-collapse:collapse;margin:22px 0;font-size:15px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:22px 0}
+.table-wrap>table{margin:0;min-width:100%}
+@media (max-width:640px){.table-wrap{border:1px solid rgba(255,255,255,.10);border-radius:10px}}
 th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border)}
 th{color:var(--fg);font-size:14px}
 td{color:var(--muted)}
@@ -167,13 +170,13 @@ footer{padding:48px 0 68px;text-align:center;color:var(--muted);font-size:14px;b
   <div class="wrap">
     <h2>How the numbers are calculated</h2>
     <p>No hidden weighting, no fudge factor. Every figure above comes from four lines of arithmetic:</p>
-    <table>
+    <div class="table-wrap"><table>
       <tr><th>Figure</th><th>Formula</th></tr>
       <tr><td>Hours per year</td><td>daily hours × 365</td></tr>
       <tr><td>Days per year</td><td>hours per year ÷ 24</td></tr>
       <tr><td>Waking weeks per year</td><td>hours per year ÷ 16 ÷ 7 <span style="color:var(--fg)">(a 16-hour waking day)</span></td></tr>
       <tr><td>Years of remaining life</td><td>(reclaimable hours per year × years remaining) ÷ (365 × 16)</td></tr>
-    </table>
+    </table></div>
     <p>Years remaining assumes a life expectancy of 80. The final figure counts only the share you marked as <em>time you'd take back</em> — hours spent on calls, maps, music or work are not being counted against you. And it is measured in <strong>waking</strong> years, not calendar years, because the eight hours a day you spend asleep were never yours to spend anyway.</p>
     <p>That last choice is the one that makes the number land. Two hours a day sounds like a rounding error. Two hours a day of the roughly sixteen you are actually awake is <strong>one-eighth of your conscious life</strong>, and you would notice immediately if someone took an eighth of your salary.</p>
   </div>

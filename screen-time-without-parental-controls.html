@@ -62,7 +62,10 @@ p{margin-bottom:16px;color:#c9d1d9}
 .quote{background:var(--card);border-left:3px solid var(--accent);padding:18px 22px;border-radius:0 10px 10px 0;margin:22px 0}
 .quote p{font-style:italic;margin:0}
 .quote cite{display:block;margin-top:10px;font-size:14px;color:var(--muted);font-style:normal}
-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+table{width:100%;border-collapse:collapse;margin:22px 0;font-size:15px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:22px 0}
+.table-wrap>table{margin:0;min-width:100%}
+@media (max-width:640px){.table-wrap{border:1px solid rgba(255,255,255,.10);border-radius:10px}}
 th,td{text-align:left;padding:12px;border-bottom:1px solid var(--border)}
 th{color:var(--fg);font-weight:600}
 td{color:var(--muted)}
@@ -116,14 +119,14 @@ footer a{color:var(--accent)}
 <p>Blocking alone rarely sticks. What works is a number you don't want to reset — a streak. The wall stops the reflex; the streak is what makes you care about keeping it up.</p>
 
 <h2>Quick comparison</h2>
-<table>
+<div class="table-wrap"><table>
 <tr><th>What you want</th><th>Typical parental-control app</th><th>Typical cloud blocker</th><th>SproutGuard</th></tr>
 <tr><td>Built for blocking <em>yourself</em></td><td class="no">✗</td><td>~</td><td class="yes">✓</td></tr>
 <tr><td>No account required</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td></tr>
 <tr><td>Data never leaves device</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td></tr>
 <tr><td>No one gets a report on you</td><td class="no">✗</td><td>~</td><td class="yes">✓</td></tr>
 <tr><td>Streaks to build the habit</td><td class="no">✗</td><td>~</td><td class="yes">✓</td></tr>
-</table>
+</table></div>
 
 <h2>Common questions</h2>
 

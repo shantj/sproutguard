@@ -66,6 +66,9 @@ p{margin-bottom:16px;color:#c9d1d9}
 ul{margin:0 0 16px 22px;color:#c9d1d9}
 li{margin-bottom:9px}
 table{width:100%;border-collapse:collapse;margin:22px 0;font-size:15px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:22px 0}
+.table-wrap>table{margin:0;min-width:100%}
+@media (max-width:640px){.table-wrap{border:1px solid rgba(255,255,255,.10);border-radius:10px}}
 th,td{border:1px solid var(--border);padding:10px 12px;text-align:left;color:#c9d1d9;vertical-align:top}
 th{background:var(--card);color:var(--fg)}
 .cta-box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;margin:44px 0;text-align:center}
@@ -118,13 +121,13 @@ footer a{color:var(--accent)}
 </ul>
 
 <h2>Quick comparison</h2>
-<table>
+<div class="table-wrap"><table>
 <tr><th>Approach</th><th>Best for</th><th>Main weakness</th></tr>
 <tr><td>iOS Screen Time</td><td>Zero-cost baseline</td><td>Nothing to motivate you; useless without a passcode</td></tr>
 <tr><td>Friction / delay apps</td><td>Reflex opening</td><td>You can wait out the pause</td></tr>
 <tr><td>Subscription blockers</td><td>Feature depth</td><td>Cost; often an account you don't need</td></tr>
 <tr><td>SproutGuard</td><td>Adults blocking themselves, privately</td><td>iPhone only (iOS 18+), no iPad app; deliberately minimal</td></tr>
-</table>
+</table></div>
 
 <h2>How to choose in one minute</h2>
 <ul>

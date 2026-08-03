@@ -66,6 +66,9 @@ p{margin-bottom:16px;color:#c9d1d9}
 ul,ol{margin:0 0 16px 22px;color:#c9d1d9}
 li{margin-bottom:9px}
 table{width:100%;border-collapse:collapse;margin:22px 0;font-size:15px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:22px 0}
+.table-wrap>table{margin:0;min-width:100%}
+@media (max-width:640px){.table-wrap{border:1px solid rgba(255,255,255,.10);border-radius:10px}}
 th,td{border:1px solid var(--border);padding:10px 12px;text-align:left;color:#c9d1d9}
 th{background:var(--card);color:var(--fg)}
 .cta-box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;margin:44px 0;text-align:center}
@@ -95,13 +98,13 @@ footer a{color:var(--accent)}
 <p>The flip side is the useful part: <strong>a blocker that has no server has no monthly cost to cover.</strong> Since iOS 16, Apple's Family Controls / Managed Settings APIs let a third-party app perform real system-level blocking entirely on-device. An app built that way needs no account, stores nothing remotely, and can therefore give away the core function without bleeding money.</p>
 
 <h2>Your actual no-subscription options</h2>
-<table>
+<div class="table-wrap"><table>
 <tr><th>Option</th><th>Cost</th><th>Best when</th><th>Weakness</th></tr>
 <tr><td><strong>Apple Screen Time</strong> (built in)</td><td>Free, forever</td><td>You need limits and a bedtime Downtime window and you'll set a passcode</td><td>"Ignore Limit" makes it advisory; clunky multi-menu setup; no streak or motivation layer</td></tr>
 <tr><td><strong>Guided Access</strong> (built in)</td><td>Free</td><td>You need one hour of forced single-app focus, right now</td><td>Manual every time, locks you into one app, not a daily system</td></tr>
 <tr><td><strong>SproutGuard</strong></td><td>Free tier; Premium is an auto-renewing subscription</td><td>You want blocking + sessions + a streak without an account</td><td>iPhone only, iOS 18+; no cross-device sync — by design, since there's no server. Premium is a subscription, not a one-off — see the note below</td></tr>
 <tr><td><strong>Subscription blockers</strong></td><td>~$3–8/week or ~$40/yr</td><td>You genuinely want sync, dashboards, or an accountability partner</td><td>You're paying monthly for infrastructure you may never use</td></tr>
-</table>
+</table></div>
 
 <h2>How to spot a fake free tier in 60 seconds</h2>
 <ol>

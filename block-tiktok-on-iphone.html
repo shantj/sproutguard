@@ -83,6 +83,9 @@ ul,ol{margin:0 0 16px 22px;color:#c9d1d9}
 li{margin-bottom:9px}
 code{background:var(--card);border:1px solid var(--border);border-radius:5px;padding:1px 6px;font-size:14px}
 table{width:100%;border-collapse:collapse;margin:22px 0;font-size:15px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:22px 0}
+.table-wrap>table{margin:0;min-width:100%}
+@media (max-width:640px){.table-wrap{border:1px solid rgba(255,255,255,.10);border-radius:10px}}
 th,td{border:1px solid var(--border);padding:10px 12px;text-align:left;color:#c9d1d9}
 th{background:var(--card);color:var(--fg)}
 .cta-box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;margin:44px 0;text-align:center}
@@ -128,14 +131,14 @@ footer a{color:var(--accent)}
 <p>A TikTok link tapped inside a messaging app may open in that app's embedded browser, which doesn't always inherit the same restrictions. There's no clean toggle for this. The practical mitigation is the web-content block above, which applies broadly, plus the habit of not opening video links from chat at all.</p>
 
 <h2>Which method should you use?</h2>
-<table>
+<div class="table-wrap"><table>
 <tr><th>Method</th><th>Strength</th><th>Fails when</th></tr>
 <tr><td>App Limit, no passcode</td><td>30 seconds to set up</td><td>Immediately — one tap removes it</td></tr>
 <tr><td>App Limit + passcode</td><td>Real friction</td><td>You memorised the passcode</td></tr>
 <tr><td>Downtime + block toggle</td><td>Strongest built-in option</td><td>Your danger hours are unpredictable</td></tr>
 <tr><td>Delete the app</td><td>Feels decisive</td><td>Day two, at the App Store</td></tr>
 <tr><td>Third-party blocker</td><td>Adds sessions + streak motivation</td><td>It demands an account or a weekly subscription</td></tr>
-</table>
+</table></div>
 
 <div class="callout"><p><strong>The honest version:</strong> Apple's free built-in tools can block TikTok completely. What they can't do is make you want to keep the block. That's a motivation problem, not a technical one — and it's why a visible streak, something you lose by overriding, tends to outlast pure restriction.</p></div>
 

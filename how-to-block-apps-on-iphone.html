@@ -81,6 +81,9 @@ p{margin-bottom:16px;color:#c9d1d9}
 ul,ol{margin:0 0 16px 22px;color:#c9d1d9}
 li{margin-bottom:9px}
 table{width:100%;border-collapse:collapse;margin:22px 0;font-size:15px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:22px 0}
+.table-wrap>table{margin:0;min-width:100%}
+@media (max-width:640px){.table-wrap{border:1px solid rgba(255,255,255,.10);border-radius:10px}}
 th,td{border:1px solid var(--border);padding:10px 12px;text-align:left;color:#c9d1d9}
 th{background:var(--card);color:var(--fg)}
 .cta-box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;margin:44px 0;text-align:center}
@@ -141,13 +144,13 @@ footer a{color:var(--accent)}
 </ul>
 
 <h2>Which one should you use?</h2>
-<table>
+<div class="table-wrap"><table>
 <tr><th>Goal</th><th>Use</th></tr>
 <tr><td>Cut total daily use</td><td>App Limits + Screen Time passcode</td></tr>
 <tr><td>Stop bedtime / morning scrolling</td><td>Downtime, 10pm–8am</td></tr>
 <tr><td>Reduce pull without hard blocking</td><td>Focus mode + move apps off page one</td></tr>
 <tr><td>You keep tapping "Ignore Limit"</td><td>Third-party blocker with real sessions</td></tr>
-</table>
+</table></div>
 
 <h2>A note on privacy</h2>
 <p>Worth knowing before you install anything: Apple designed the Screen Time API so a blocker can restrict apps <em>without being told which apps you use</em>. The selection is made inside a system-provided picker your app never reads. So any blocker asking you to create an account, sign in, or upload usage "for insights" is choosing to collect that — the platform doesn't require it.</p>

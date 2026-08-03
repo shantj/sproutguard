@@ -80,6 +80,9 @@ p{margin-bottom:16px;color:#c9d1d9}
 ul,ol{margin:0 0 16px 22px;color:#c9d1d9}
 li{margin-bottom:9px}
 table{width:100%;border-collapse:collapse;margin:22px 0;font-size:15px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:22px 0}
+.table-wrap>table{margin:0;min-width:100%}
+@media (max-width:640px){.table-wrap{border:1px solid rgba(255,255,255,.10);border-radius:10px}}
 th,td{border:1px solid var(--border);padding:10px 12px;text-align:left;color:#c9d1d9}
 th{background:var(--card);color:var(--fg)}
 .cta-box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;margin:44px 0;text-align:center}
@@ -136,13 +139,13 @@ footer a{color:var(--accent)}
 
 <h2>When the built-ins still aren't enough</h2>
 <p>Apple's tools are budget-shaped: they count minutes and then argue with you. If you've already set all of the above and still find yourself in the app, the missing piece usually isn't a stricter limit — it's <em>state you don't want to break</em>.</p>
-<table>
+<div class="table-wrap"><table>
 <tr><th>Symptom</th><th>What actually fixes it</th></tr>
 <tr><td>You tap "Ignore Limit" daily</td><td>Screen Time passcode you can't recall</td></tr>
 <tr><td>You use instagram.com instead</td><td>Never Allow web entry</td></tr>
 <tr><td>You disable the whole thing on bad days</td><td>A streak counter — a number with a cost to resetting</td></tr>
 <tr><td>You reinstall the app</td><td>Limit set on the app category, not the installed app</td></tr>
-</table>
+</table></div>
 <p>Third-party blockers built on Apple's Screen Time API (Family Controls / Managed Settings) drive the exact same system-level enforcement, but can wrap it in a session that doesn't offer you an escape hatch, and a streak that makes quitting visible to you. Notably, that API is designed so the blocker never learns which apps you opened — so no blocker <em>needs</em> an account or a server to work.</p>
 
 <div class="cta-box">
