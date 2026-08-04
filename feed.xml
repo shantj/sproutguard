@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>SproutGuard updates</title>
+  <subtitle>New guides, tools, and acquisition write-ups from the makers of SproutGuard.</subtitle>
+  <id>https://shantj.github.io/sproutguard/feed.xml</id>
+  <updated>2026-08-03T22:32:48Z</updated>
+  <link href="https://shantj.github.io/sproutguard/feed.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://shantj.github.io/sproutguard/" rel="alternate" type="text/html"/>
+  <author><name>Sam_tj</name></author>
+  <entry>
+    <title>My site-indexation checker passed once, then failed 8 times in a row</title>
+    <id>https://dev.to/samtj/my-site-indexation-checker-passed-once-then-failed-8-times-in-a-row-same-query-same-minute-4kfn</id>
+    <link href="https://dev.to/samtj/my-site-indexation-checker-passed-once-then-failed-8-times-in-a-row-same-query-same-minute-4kfn" rel="alternate"/>
+    <updated>2026-08-03T22:32:48Z</updated>
+    <summary>A debugging write-up on why a seemingly valid indexation sensor turned out to be unreliable in practice.</summary>
+  </entry>
+  <entry>
+    <title>How to stop bypassing your own Screen Time limits</title>
+    <id>https://shantj.github.io/sproutguard/stop-bypassing-screen-time.html</id>
+    <link href="https://shantj.github.io/sproutguard/stop-bypassing-screen-time.html" rel="alternate"/>
+    <updated>2026-08-03T18:14:57Z</updated>
+    <summary>Six settings that make your own Screen Time limits materially harder to undo.</summary>
+  </entry>
+  <entry>
+    <title>Screen time apps without parental controls</title>
+    <id>https://shantj.github.io/sproutguard/screen-time-without-parental-controls.html</id>
+    <link href="https://shantj.github.io/sproutguard/screen-time-without-parental-controls.html" rel="alternate"/>
+    <updated>2026-08-03T18:14:57Z</updated>
+    <summary>Why adults blocking themselves need a different product shape from supervision apps.</summary>
+  </entry>
+  <entry>
+    <title>Screen time calculator: years of your life on your phone</title>
+    <id>https://shantj.github.io/sproutguard/screen-time-calculator.html</id>
+    <link href="https://shantj.github.io/sproutguard/screen-time-calculator.html" rel="alternate"/>
+    <updated>2026-08-03T18:14:57Z</updated>
+    <summary>A free, no-sign-up calculator that turns daily screen time into days per year and waking years of life.</summary>
+  </entry>
+  <entry>
+    <title>How to stop doomscrolling</title>
+    <id>https://shantj.github.io/sproutguard/how-to-stop-doomscrolling.html</id>
+    <link href="https://shantj.github.io/sproutguard/how-to-stop-doomscrolling.html" rel="alternate"/>
+    <updated>2026-08-03T18:14:57Z</updated>
+    <summary>Seven practical interventions for breaking reflexive scrolling loops.</summary>
+  </entry>
+  <entry>
+    <title>How to block apps on iPhone</title>
+    <id>https://shantj.github.io/sproutguard/how-to-block-apps-on-iphone.html</id>
+    <link href="https://shantj.github.io/sproutguard/how-to-block-apps-on-iphone.html" rel="alternate"/>
+    <updated>2026-08-03T18:14:57Z</updated>
+    <summary>A practical guide to all four iPhone blocking methods and where each one breaks.</summary>
+  </entry>
+  <entry>
+    <title>How to block TikTok on iPhone</title>
+    <id>https://shantj.github.io/sproutguard/block-tiktok-on-iphone.html</id>
+    <link href="https://shantj.github.io/sproutguard/block-tiktok-on-iphone.html" rel="alternate"/>
+    <updated>2026-08-03T18:14:57Z</updated>
+    <summary>How to block TikTok on iPhone and where each method quietly fails.</summary>
+  </entry>
+  <entry>
+    <title>How to block Instagram on iPhone</title>
+    <id>https://shantj.github.io/sproutguard/block-instagram-on-iphone.html</id>
+    <link href="https://shantj.github.io/sproutguard/block-instagram-on-iphone.html" rel="alternate"/>
+    <updated>2026-08-03T18:14:57Z</updated>
+    <summary>How to block Instagram on iPhone and close the Safari / Ignore Limit / reinstall loopholes.</summary>
+  </entry>
+  <entry>
+    <title>Best app blockers for adults on iPhone</title>
+    <id>https://shantj.github.io/sproutguard/best-app-blockers-for-adults.html</id>
+    <link href="https://shantj.github.io/sproutguard/best-app-blockers-for-adults.html" rel="alternate"/>
+    <updated>2026-08-03T18:14:57Z</updated>
+    <summary>An adult-first comparison that distinguishes self-control tools from parental control apps.</summary>
+  </entry>
+  <entry>
+    <title>App blockers without a subscription</title>
+    <id>https://shantj.github.io/sproutguard/app-blocker-without-subscription.html</id>
+    <link href="https://shantj.github.io/sproutguard/app-blocker-without-subscription.html" rel="alternate"/>
+    <updated>2026-08-03T18:14:57Z</updated>
+    <summary>How to spot fake free tiers and which iPhone blockers are genuinely free.</summary>
+  </entry>
+</feed>
