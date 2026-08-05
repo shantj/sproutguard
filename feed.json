@@ -1,0 +1,113 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "SproutGuard updates",
+  "home_page_url": "https://shantj.github.io/sproutguard/",
+  "feed_url": "https://shantj.github.io/sproutguard/feed.json",
+  "description": "New guides, tools, and acquisition write-ups from the makers of SproutGuard.",
+  "language": "en",
+  "authors": [
+    {
+      "name": "Sam_tj"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://shantj.github.io/sproutguard/block-social-media-on-iphone.html",
+      "url": "https://shantj.github.io/sproutguard/block-social-media-on-iphone.html",
+      "title": "How to block social media on iPhone",
+      "summary": "The built-in Screen Time setup for blocking social media on iPhone, including both app and website routes.",
+      "date_published": "2026-08-05T11:37:20Z"
+    },
+    {
+      "id": "https://shantj.github.io/sproutguard/how-to-block-websites-on-iphone.html",
+      "url": "https://shantj.github.io/sproutguard/how-to-block-websites-on-iphone.html",
+      "title": "How to block websites on iPhone",
+      "summary": "The free Screen Time setup for blocking specific websites on iPhone, plus the passcode and hostname checks that make it hold.",
+      "date_published": "2026-08-05T07:34:00Z"
+    },
+    {
+      "id": "https://shantj.github.io/sproutguard/block-youtube-shorts-on-iphone.html",
+      "url": "https://shantj.github.io/sproutguard/block-youtube-shorts-on-iphone.html",
+      "title": "How to block YouTube Shorts on iPhone",
+      "summary": "The honest setup for stopping YouTube Shorts on iPhone when iOS cannot block only the Shorts tab.",
+      "date_published": "2026-08-05T03:25:00Z"
+    },
+    {
+      "id": "https://shantj.github.io/sproutguard/how-to-turn-off-ignore-limit-on-iphone.html",
+      "url": "https://shantj.github.io/sproutguard/how-to-turn-off-ignore-limit-on-iphone.html",
+      "title": "How to turn off \"Ignore Limit\" on iPhone Screen Time",
+      "summary": "You cannot remove the button itself, but you can neutralise it with a passcode, Downtime, and a narrower block window.",
+      "date_published": "2026-08-04T23:06:56Z"
+    },
+    {
+      "id": "https://dev.to/samtj/my-site-indexation-checker-passed-once-then-failed-8-times-in-a-row-same-query-same-minute-4kfn",
+      "url": "https://dev.to/samtj/my-site-indexation-checker-passed-once-then-failed-8-times-in-a-row-same-query-same-minute-4kfn",
+      "title": "My site-indexation checker passed once, then failed 8 times in a row",
+      "summary": "A debugging write-up on why a seemingly valid indexation sensor turned out to be unreliable in practice.",
+      "date_published": "2026-08-03T22:32:48Z"
+    },
+    {
+      "id": "https://shantj.github.io/sproutguard/stop-bypassing-screen-time.html",
+      "url": "https://shantj.github.io/sproutguard/stop-bypassing-screen-time.html",
+      "title": "How to stop bypassing your own Screen Time limits",
+      "summary": "Six settings that make your own Screen Time limits materially harder to undo.",
+      "date_published": "2026-08-03T18:14:57Z"
+    },
+    {
+      "id": "https://shantj.github.io/sproutguard/screen-time-without-parental-controls.html",
+      "url": "https://shantj.github.io/sproutguard/screen-time-without-parental-controls.html",
+      "title": "Screen time apps without parental controls",
+      "summary": "Why adults blocking themselves need a different product shape from supervision apps.",
+      "date_published": "2026-08-03T18:14:57Z"
+    },
+    {
+      "id": "https://shantj.github.io/sproutguard/screen-time-calculator.html",
+      "url": "https://shantj.github.io/sproutguard/screen-time-calculator.html",
+      "title": "Screen time calculator: years of your life on your phone",
+      "summary": "A free, no-sign-up calculator that turns daily screen time into days per year and waking years of life.",
+      "date_published": "2026-08-03T18:14:57Z"
+    },
+    {
+      "id": "https://shantj.github.io/sproutguard/how-to-stop-doomscrolling.html",
+      "url": "https://shantj.github.io/sproutguard/how-to-stop-doomscrolling.html",
+      "title": "How to stop doomscrolling",
+      "summary": "Seven practical interventions for breaking reflexive scrolling loops.",
+      "date_published": "2026-08-03T18:14:57Z"
+    },
+    {
+      "id": "https://shantj.github.io/sproutguard/how-to-block-apps-on-iphone.html",
+      "url": "https://shantj.github.io/sproutguard/how-to-block-apps-on-iphone.html",
+      "title": "How to block apps on iPhone",
+      "summary": "A practical guide to all four iPhone blocking methods and where each one breaks.",
+      "date_published": "2026-08-03T18:14:57Z"
+    },
+    {
+      "id": "https://shantj.github.io/sproutguard/block-tiktok-on-iphone.html",
+      "url": "https://shantj.github.io/sproutguard/block-tiktok-on-iphone.html",
+      "title": "How to block TikTok on iPhone",
+      "summary": "How to block TikTok on iPhone and where each method quietly fails.",
+      "date_published": "2026-08-03T18:14:57Z"
+    },
+    {
+      "id": "https://shantj.github.io/sproutguard/block-instagram-on-iphone.html",
+      "url": "https://shantj.github.io/sproutguard/block-instagram-on-iphone.html",
+      "title": "How to block Instagram on iPhone",
+      "summary": "How to block Instagram on iPhone and close the Safari / Ignore Limit / reinstall loopholes.",
+      "date_published": "2026-08-03T18:14:57Z"
+    },
+    {
+      "id": "https://shantj.github.io/sproutguard/best-app-blockers-for-adults.html",
+      "url": "https://shantj.github.io/sproutguard/best-app-blockers-for-adults.html",
+      "title": "Best app blockers for adults on iPhone",
+      "summary": "An adult-first comparison that distinguishes self-control tools from parental control apps.",
+      "date_published": "2026-08-03T18:14:57Z"
+    },
+    {
+      "id": "https://shantj.github.io/sproutguard/app-blocker-without-subscription.html",
+      "url": "https://shantj.github.io/sproutguard/app-blocker-without-subscription.html",
+      "title": "App blockers without a subscription",
+      "summary": "How to spot fake free tiers and which iPhone blockers are genuinely free.",
+      "date_published": "2026-08-03T18:14:57Z"
+    }
+  ]
+}

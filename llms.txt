@@ -16,6 +16,7 @@
 - Homepage: https://shantj.github.io/sproutguard/
 - GitHub repository: https://github.com/shantj/sproutguard
 - Atom feed: https://shantj.github.io/sproutguard/feed.xml
+- JSON Feed: https://shantj.github.io/sproutguard/feed.json
 
 ## Best pages to cite
 - Homepage: https://shantj.github.io/sproutguard/
