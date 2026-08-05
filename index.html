@@ -83,6 +83,7 @@ h1 .hl{color:var(--accent)}
 .cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(63,185,80,.3)}
 .midcta{margin-top:30px;text-align:center}
 .note{margin-top:14px;font-size:14px;color:var(--muted)}
+.hero-qr{display:none}
 section{padding:56px 0;border-top:1px solid var(--border)}
 h2{font-size:28px;margin-bottom:28px;letter-spacing:-.01em}
 .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
@@ -105,6 +106,12 @@ ul.checks li strong{color:var(--fg)}
 .faq dd{color:var(--muted);margin-top:6px}
 footer{padding:56px 0 72px;text-align:center;color:var(--muted);font-size:14px;border-top:1px solid var(--border)}
 footer a{color:var(--accent)}
+@media(min-width:760px){
+  .hero-qr{display:inline-flex;align-items:center;gap:16px;margin-top:22px;padding:14px 16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:14px;text-align:left}
+  .hero-qr img{background:#fff;border-radius:10px;padding:6px;flex:0 0 auto}
+  .hero-qr strong{display:block;color:var(--fg);font-size:15px;margin-bottom:4px}
+  .hero-qr span{display:block;color:var(--muted);font-size:14px;max-width:240px;line-height:1.45}
+}
 </style>
 </head>
 <body>
@@ -116,6 +123,13 @@ footer a{color:var(--accent)}
     <p class="sub">Every other screen time app treats you like a child to be monitored. SproutGuard is a wall you build for yourself — no account, no cloud, nothing leaves your phone.</p>
     <a class="cta" href="https://apps.apple.com/app/id6768664921?ct=site-home">Download free on iOS</a>
     <p class="note">Free · No sign-up · Runs on Apple Screen Time</p>
+    <div class="hero-qr">
+      <img src="/sproutguard/img/qr-install.png" alt="QR code linking to SproutGuard on the App Store" width="120" height="120" loading="lazy">
+      <div>
+        <strong>On desktop?</strong>
+        <span>Scan once on your iPhone and open the App Store page directly.</span>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -229,6 +243,7 @@ footer a{color:var(--accent)}
       <li><a href="/sproutguard/block-instagram-on-iphone.html"><strong>How to block Instagram on iPhone</strong></a> — and the three loopholes that quietly undo it.</li>
       <li><a href="/sproutguard/app-blocker-without-subscription.html"><strong>App blockers without a subscription</strong></a> — why most charge weekly, and what's actually free.</li>
       <li><a href="/sproutguard/block-tiktok-on-iphone.html"><strong>How to block TikTok on iPhone</strong></a> — the method, plus the four loopholes that undo it.</li>
+      <li><a href="/sproutguard/block-youtube-shorts-on-iphone.html"><strong>How to block YouTube Shorts on iPhone</strong></a> — the honest answer when you can’t block only the Shorts tab.</li>
       <li><a href="/sproutguard/stop-bypassing-screen-time.html"><strong>How to stop bypassing your own limits</strong></a> — why "Ignore Limit" wins, and the six settings that beat it.</li>
       <li><a href="/sproutguard/how-to-turn-off-ignore-limit-on-iphone.html"><strong>How to turn off “Ignore Limit” on iPhone</strong></a> — the passcode + Downtime setup that makes Screen Time hold.</li>
     </ul>
