@@ -3,10 +3,17 @@
   <title>SproutGuard updates</title>
   <subtitle>New guides, tools, and acquisition write-ups from the makers of SproutGuard.</subtitle>
   <id>https://shantj.github.io/sproutguard/feed.xml</id>
-  <updated>2026-08-05T03:25:00Z</updated>
+  <updated>2026-08-05T07:34:00Z</updated>
   <link href="https://shantj.github.io/sproutguard/feed.xml" rel="self" type="application/atom+xml"/>
   <link href="https://shantj.github.io/sproutguard/" rel="alternate" type="text/html"/>
   <author><name>Sam_tj</name></author>
+  <entry>
+    <title>How to block websites on iPhone</title>
+    <id>https://shantj.github.io/sproutguard/how-to-block-websites-on-iphone.html</id>
+    <link href="https://shantj.github.io/sproutguard/how-to-block-websites-on-iphone.html" rel="alternate"/>
+    <updated>2026-08-05T07:34:00Z</updated>
+    <summary>The free Screen Time setup for blocking specific websites on iPhone, plus the passcode and hostname checks that make it hold.</summary>
+  </entry>
   <entry>
     <title>How to block YouTube Shorts on iPhone</title>
     <id>https://shantj.github.io/sproutguard/block-youtube-shorts-on-iphone.html</id>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="/sproutguard/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/sproutguard/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/sproutguard/apple-touch-icon.png">
+<link rel="manifest" href="/sproutguard/site.webmanifest">
+<meta name="apple-itunes-app" content="app-id=6768664921, affiliate-data=ct=sb-g-websites-top">
+<meta name="theme-color" content="#0f1115">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Block Websites on iPhone (And Make It Stick)</title>
+<meta name="description" content="Block specific websites on iPhone with Screen Time Web Content restrictions, plus the passcode and loophole checks that stop the block collapsing the same day.">
+<meta name="keywords" content="how to block websites on iphone, block websites iphone, block website safari iphone, screen time website blocker iphone, block social media websites iphone">
+<link rel="canonical" href="https://shantj.github.io/sproutguard/how-to-block-websites-on-iphone.html">
+<link rel="alternate" type="application/atom+xml" title="SproutGuard updates" href="https://shantj.github.io/sproutguard/feed.xml">
+<link rel="alternate" hreflang="en-US" href="https://shantj.github.io/sproutguard/how-to-block-websites-on-iphone.html">
+<link rel="alternate" hreflang="en-GB" href="https://shantj.github.io/sproutguard/how-to-block-websites-on-iphone.html">
+<link rel="alternate" hreflang="en-CA" href="https://shantj.github.io/sproutguard/how-to-block-websites-on-iphone.html">
+<link rel="alternate" hreflang="en-AU" href="https://shantj.github.io/sproutguard/how-to-block-websites-on-iphone.html">
+<link rel="alternate" hreflang="en-IE" href="https://shantj.github.io/sproutguard/how-to-block-websites-on-iphone.html">
+<link rel="alternate" hreflang="en-NZ" href="https://shantj.github.io/sproutguard/how-to-block-websites-on-iphone.html">
+<link rel="alternate" hreflang="x-default" href="https://shantj.github.io/sproutguard/how-to-block-websites-on-iphone.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Block Websites on iPhone (And Make It Stick)">
+<meta property="og:description" content="The free Screen Time setup for blocking specific websites on iPhone, plus the passcode and loophole checks that make it hold.">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://shantj.github.io/sproutguard/img/og-home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://shantj.github.io/sproutguard/img/og-home.png">
+<meta property="og:url" content="https://shantj.github.io/sproutguard/how-to-block-websites-on-iphone.html">
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"HowTo",
+ "name":"How to Block Websites on iPhone",
+ "description":"Use Screen Time Web Content restrictions to block specific websites on iPhone and make the restriction survive contact with your own override button.",
+ "step":[
+  {"@type":"HowToStep","name":"Turn on Content and Privacy Restrictions in Screen Time"},
+  {"@type":"HowToStep","name":"Choose Web Content restrictions"},
+  {"@type":"HowToStep","name":"Add each distracting site under Never Allow"},
+  {"@type":"HowToStep","name":"Lock Screen Time Settings with a passcode"},
+  {"@type":"HowToStep","name":"Test every route you actually use, including mobile subdomains"}
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {"@type":"Question","name":"Can I block a website on iPhone without blocking all of Safari?",
+   "acceptedAnswer":{"@type":"Answer","text":"Yes. In Screen Time, go to Content and Privacy Restrictions > Content Restrictions > Web Content > Limit Adult Websites, then add the specific site under Never Allow. That blocks the named domain without removing the browser entirely."}},
+  {"@type":"Question","name":"Why can I still reach the site after blocking it?",
+   "acceptedAnswer":{"@type":"Answer","text":"Usually one of three things happened: you blocked only the app and not the website, you blocked one hostname but not the mobile or alternate domain, or Screen Time settings were left unlocked so the restriction could be removed in seconds. Test the exact routes you use, then lock Screen Time Settings with a passcode."}},
+  {"@type":"Question","name":"Is there a free way to block social media websites on iPhone?",
+   "acceptedAnswer":{"@type":"Answer","text":"Yes. Apple's built-in Screen Time is free. It can block websites such as instagram.com, reddit.com, youtube.com or x.com with Web Content restrictions. The missing piece for many people is not capability but friction: a passcode and a setup that closes the obvious escape routes."}},
+  {"@type":"Question","name":"Do I need another app to block websites on iPhone?",
+   "acceptedAnswer":{"@type":"Answer","text":"Not necessarily. Apple's built-in tools are the honest first thing to try. Some people add a third-party blocker later for sessions and streaks, but the actual website restriction itself can be done free with Screen Time."}}
+ ]
+}
+</script>
+
+<style>
+:root{--bg:#0d1117;--fg:#e6edf3;--muted:#8b949e;--accent:#3fb950;--card:#161b22;--border:#30363d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+nav{padding:22px 0;border-bottom:1px solid var(--border)}
+nav a{color:var(--accent);text-decoration:none;font-weight:600}
+article{padding:56px 0}
+h1{font-size:clamp(28px,4.5vw,40px);line-height:1.2;margin-bottom:16px;letter-spacing:-.02em}
+.lede{font-size:19px;color:var(--muted);margin-bottom:40px}
+h2{font-size:22px;margin:40px 0 14px;letter-spacing:-.01em}
+h3{font-size:17px;margin:24px 0 10px}
+h2 .num{color:var(--accent);margin-right:8px}
+p{margin-bottom:16px;color:#c9d1d9}
+.callout{background:var(--card);border-left:3px solid var(--accent);padding:18px 22px;border-radius:0 10px 10px 0;margin:22px 0}
+.callout p{margin:0}
+.callout a{color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.callout a:visited{color:var(--accent)}
+ul,ol{margin:0 0 16px 22px;color:#c9d1d9}
+li{margin-bottom:9px}
+table{width:100%;border-collapse:collapse;margin:22px 0;font-size:15px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:22px 0}
+.table-wrap>table{margin:0;min-width:100%}
+@media (max-width:640px){.table-wrap{border:1px solid rgba(255,255,255,.10);border-radius:10px}}
+th,td{border:1px solid var(--border);padding:10px 12px;text-align:left;color:#c9d1d9}
+th{background:var(--card);color:var(--fg)}
+.cta-box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;margin:44px 0;text-align:center}
+.cta{display:inline-block;background:var(--accent);color:#0d1117;font-weight:700;padding:13px 30px;border-radius:9px;text-decoration:none;margin-top:14px}
+.related{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:22px;margin:36px 0}
+.related a{color:var(--accent);text-decoration:none}
+footer{padding:40px 0;border-top:1px solid var(--border);color:var(--muted);font-size:14px;text-align:center}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap"><a href="/sproutguard/">🌱 SproutGuard</a></div></nav>
+
+<article>
+<div class="wrap">
+
+<h1>How to Block Websites on iPhone</h1>
+<p class="lede">Yes, you can block specific websites on iPhone for free. The part that fails is usually not the block itself but the setup around it: one hostname left open, one settings screen left unlocked, and the habit simply walks around the wall.</p>
+
+<div class="callout cta-early"><p>Short answer: Apple's built-in Screen Time can do this free, and the exact steps are below. If you want the same website block wrapped in a session and a streak, <a href="https://apps.apple.com/app/id6768664921?ct=g-websites-top">SproutGuard</a> adds that on-device with no account.</p></div>
+
+<h2>First: the three ways a website block quietly fails</h2>
+<ol>
+  <li><strong>You blocked the app, not the site.</strong> The habit just moves from the app to Safari.</li>
+  <li><strong>You blocked one address, not the route you actually use.</strong> Mobile domains and alternate hostnames still open.</li>
+  <li><strong>Screen Time settings are unlocked.</strong> The restriction gets removed in seconds the first bad evening.</li>
+</ol>
+<p>If you close all three, the free built-in setup is good enough for a lot of people.</p>
+
+<h2><span class="num">1.</span> Turn on website restrictions</h2>
+<ol>
+  <li>Open <strong>Settings → Screen Time</strong></li>
+  <li>Tap <strong>Content &amp; Privacy Restrictions</strong> and turn it on</li>
+  <li>Tap <strong>Content Restrictions → Web Content</strong></li>
+  <li>Choose <strong>Limit Adult Websites</strong></li>
+</ol>
+<p>That mode sounds narrower than it is. It is also the switch that exposes a manual block list for specific websites.</p>
+
+<h2><span class="num">2.</span> Add the websites under <em>Never Allow</em></h2>
+<ol>
+  <li>Under <strong>Never Allow</strong>, tap <strong>Add Website</strong></li>
+  <li>Enter the exact site you want blocked, like <code>instagram.com</code>, <code>reddit.com</code> or <code>youtube.com</code></li>
+  <li>If you use a mobile hostname too, add that as well, for example <code>m.youtube.com</code></li>
+</ol>
+<p>The block is only as good as the domains you actually typed. If you keep reaching the site, check whether you blocked the address you use in practice rather than the one you think you use.</p>
+
+<h2><span class="num">3.</span> Lock Screen Time Settings</h2>
+<p>Go back to <strong>Screen Time → Lock Screen Time Settings</strong> and set a passcode you do not know reflexively. This is the step that turns a useful setup into a durable one.</p>
+<div class="callout"><p><strong>Without this, the website block is advisory.</strong> You are asking the same distracted version of yourself who wants the site to also protect the settings screen. That arrangement rarely survives the week.</p></div>
+
+<h2><span class="num">4.</span> Test the exact loopholes you use</h2>
+<p>After setting the block, try the obvious escapes immediately:</p>
+<ul>
+  <li>Type the site directly in Safari</li>
+  <li>Open it from a saved bookmark</li>
+  <li>Open a shared link from Messages or Mail</li>
+  <li>Try the mobile hostname if the service has one</li>
+</ul>
+<p>If one of those still works, fix it now rather than discovering it the next time you are tired and bored.</p>
+
+<h2>What this is good for — and what it is not</h2>
+<div class="table-wrap"><table>
+<tr><th>Goal</th><th>Best built-in move</th></tr>
+<tr><td>Block one distracting website</td><td>Web Content → Never Allow</td></tr>
+<tr><td>Stop the site only at night</td><td>Combine the site block with Downtime</td></tr>
+<tr><td>Stop the app and the site together</td><td>App Limit or Downtime + website block</td></tr>
+<tr><td>You keep undoing the restriction</td><td>Passcode + extra friction like a session or streak</td></tr>
+</table></div>
+<p>Website blocking works best when paired with app blocking. If the app is the front door and Safari is the side door, closing only one is still leaving the building open.</p>
+
+<h2>When the built-in setup still is not enough</h2>
+<p>If you already did all of the above and still keep reversing it, the missing piece is usually not a stronger technical block. It is motivation structure. Apple's built-in tools restrict; they do not give you much reason not to back out.</p>
+<p>That is where a blocker built on the same Screen Time framework can help: not by doing something magical Apple cannot, but by wrapping the same website block in a deliberate session and a streak you do not want to reset.</p>
+
+<div class="cta-box">
+  <strong style="font-size:19px">SproutGuard — block the site, not your autonomy</strong>
+  <p style="margin-top:10px;color:var(--muted)">Built on Apple's Screen Time framework. No account, no server, nothing leaves your phone. App and website blocking + focus sessions + streaks, free on iOS.</p>
+  <a class="cta" href="https://apps.apple.com/app/id6768664921?ct=g-websites">Download free on iOS</a>
+</div>
+
+<div class="related">
+  <strong>Related reading</strong>
+  <ul style="margin-top:10px">
+    <li><a href="/sproutguard/how-to-block-apps-on-iphone.html">How to block apps on iPhone</a> — every built-in method, ranked.</li>
+    <li><a href="/sproutguard/block-instagram-on-iphone.html">How to block Instagram on iPhone</a> — including the Safari loophole.</li>
+    <li><a href="/sproutguard/block-youtube-shorts-on-iphone.html">How to block YouTube Shorts on iPhone</a> — and why the web path matters.</li>
+    <li><a href="/sproutguard/stop-bypassing-screen-time.html">How to stop bypassing your own Screen Time limits</a> — the six settings that make it hold.</li>
+    <li><a href="/sproutguard/screen-time-calculator.html">Screen time calculator</a> — see the cost of the time you want back.</li>
+  </ul>
+</div>
+
+</div>
+</article>
+
+<!-- QR-INSTALL-BLOCK -->
+<section class="sg-qr" aria-labelledby="sg-qr-h">
+  <div class="wrap">
+    <div class="sg-qr-card">
+      <img src="/sproutguard/img/qr-install.png" alt="QR code linking to SproutGuard on the App Store" width="150" height="150" loading="lazy">
+      <div>
+        <h2 id="sg-qr-h">Reading this on a computer?</h2>
+        <p>SproutGuard is an iPhone app, so there is nothing to install here. Point your iPhone camera at this code and it opens straight to the App Store page.</p>
+        <p class="sg-qr-note">Currently available on the <strong>US, UK, Canada, Australia, Ireland and New Zealand</strong> App Stores. Free, no account, nothing leaves your device.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+.sg-qr{padding:46px 0;border-top:1px solid rgba(255,255,255,.08)}
+.sg-qr .sg-qr-card{display:flex;gap:26px;align-items:center;max-width:760px;margin:0 auto;
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);
+  border-radius:16px;padding:26px;text-align:left}
+.sg-qr img{border-radius:10px;background:#fff;padding:8px;flex:0 0 auto}
+.sg-qr h2{font-size:20px;margin:0 0 8px}
+.sg-qr p{margin:0 0 8px;font-size:15px;line-height:1.55;opacity:.86}
+.sg-qr .sg-qr-note{font-size:13px;opacity:.85;margin:0}
+@media (max-width:640px){
+  .sg-qr{display:none}
+}
+</style>
+<!-- /QR-INSTALL-BLOCK -->
+
+<footer><div class="wrap"><a href="/sproutguard/">← Back to SproutGuard</a> · <a href="/sproutguard/feed.xml">RSS/Atom updates</a></div></footer>
+
+<!-- STICKY-INSTALL-BAR -->
+<div class="sg-bar" id="sgBar" role="complementary" aria-label="Install SproutGuard">
+  <img src="img/hero-sprout.png" alt="" width="34" height="34" aria-hidden="true">
+  <div class="sg-bar-t">
+    <strong>SproutGuard</strong>
+    <span>Free · No sign-up</span>
+  </div>
+  <a class="sg-bar-btn" href="https://apps.apple.com/app/id6768664921?ct=g-websites-stickybar">Get</a>
+</div>
+<style>
+.sg-bar{display:none}
+@media (max-width:640px){
+  .sg-bar{
+    display:flex;align-items:center;gap:11px;
+    position:fixed;left:0;right:0;bottom:0;z-index:60;
+    padding:9px 14px calc(9px + env(safe-area-inset-bottom,0px));
+    background:rgba(13,17,23,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+    border-top:1px solid rgba(255,255,255,.11);
+    transform:translateY(105%);transition:transform .28s ease;
+  }
+  .sg-bar.on{transform:translateY(0)}
+  .sg-bar img{border-radius:8px;flex:0 0 auto}
+  .sg-bar-t{display:flex;flex-direction:column;line-height:1.25;min-width:0;flex:1 1 auto}
+  .sg-bar-t strong{font-size:15px}
+  .sg-bar-t span{font-size:12.5px;opacity:.72}
+  .sg-bar-btn{
+    flex:0 0 auto;background:var(--accent);color:#0d1117;font-weight:700;font-size:15px;
+    text-decoration:none;border-radius:9px;
+    min-height:44px;min-width:84px;display:flex;align-items:center;justify-content:center;padding:0 20px;
+  }
+  body{padding-bottom:74px}
+}
+</style>
+<script>
+(function(){
+  var bar=document.getElementById('sgBar');if(!bar)return;
+  var ctas=[].slice.call(document.querySelectorAll('a[href*="apps.apple.com"]')).filter(function(a){return a!==bar.querySelector('a')});
+  function visible(el){var r=el.getBoundingClientRect();return r.bottom>0&&r.top<window.innerHeight;}
+  function upd(){
+    var deep=window.scrollY>(window.innerHeight*0.55);
+    var showing=ctas.some(visible);
+    var atEnd=(window.innerHeight+window.scrollY)>=(document.documentElement.scrollHeight-140);
+    bar.classList.toggle('on',deep&&!showing&&!atEnd);
+  }
+  addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+})();
+</script>
+<!-- /STICKY-INSTALL-BAR -->
+
+</body>
+</html>
