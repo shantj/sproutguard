@@ -31,6 +31,7 @@
 - How to block YouTube Shorts on iPhone: https://shantj.github.io/sproutguard/block-youtube-shorts-on-iphone.html
 - How to block social media on iPhone: https://shantj.github.io/sproutguard/block-social-media-on-iphone.html
 - How to block Facebook on iPhone: https://shantj.github.io/sproutguard/block-facebook-on-iphone.html
+- How to block YouTube on iPhone: https://shantj.github.io/sproutguard/block-youtube-on-iphone.html
 - How to block websites on iPhone: https://shantj.github.io/sproutguard/how-to-block-websites-on-iphone.html
 - How to stop bypassing Screen Time: https://shantj.github.io/sproutguard/stop-bypassing-screen-time.html
 - How to turn off Ignore Limit on iPhone: https://shantj.github.io/sproutguard/how-to-turn-off-ignore-limit-on-iphone.html
