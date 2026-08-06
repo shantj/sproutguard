@@ -3,10 +3,17 @@
   <title>SproutGuard updates</title>
   <subtitle>New guides, tools, and acquisition write-ups from the makers of SproutGuard.</subtitle>
   <id>https://shantj.github.io/sproutguard/feed.xml</id>
-  <updated>2026-08-06T08:19:32Z</updated>
+  <updated>2026-08-06T16:54:55Z</updated>
   <link href="https://shantj.github.io/sproutguard/feed.xml" rel="self" type="application/atom+xml"/>
   <link href="https://shantj.github.io/sproutguard/" rel="alternate" type="text/html"/>
   <author><name>Sam_tj</name></author>
+  <entry>
+    <title>How to block Discord on iPhone</title>
+    <id>https://shantj.github.io/sproutguard/block-discord-on-iphone.html</id>
+    <link href="https://shantj.github.io/sproutguard/block-discord-on-iphone.html" rel="alternate"/>
+    <updated>2026-08-06T16:54:55Z</updated>
+    <summary>The built-in Screen Time setup for blocking Discord on iPhone, including the app, website and invite-link routes.</summary>
+  </entry>
   <entry>
     <title>How to block YouTube on iPhone</title>
     <id>https://shantj.github.io/sproutguard/block-youtube-on-iphone.html</id>
