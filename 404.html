@@ -74,5 +74,56 @@ footer a{color:var(--accent)}
 
   <footer>Available on the US, UK, Canada, Australia, Ireland and New Zealand App Stores. &middot; <a href="/sproutguard/feed.xml">RSS/Atom</a> &middot; <a href="/sproutguard/feed.json">JSON Feed</a> &middot; <a href="https://github.com/shantj/sproutguard">GitHub</a></footer>
 </div>
+
+
+<!-- STICKY-INSTALL-BAR -->
+<div class="sg-bar" id="sgBar" role="complementary" aria-label="Install SproutGuard">
+  <img src="/sproutguard/img/hero-sprout.png" alt="" width="34" height="34" aria-hidden="true">
+  <div class="sg-bar-t">
+    <strong>SproutGuard</strong>
+    <span>Free · No sign-up</span>
+  </div>
+  <a class="sg-bar-btn" href="https://apps.apple.com/app/id6768664921?ct=404-stickybar">Get</a>
+</div>
+<style>
+.sg-bar{display:none}
+@media (max-width:640px){
+  .sg-bar{
+    display:flex;align-items:center;gap:11px;
+    position:fixed;left:0;right:0;bottom:0;z-index:60;
+    padding:9px 14px calc(9px + env(safe-area-inset-bottom,0px));
+    background:rgba(15,17,21,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+    border-top:1px solid rgba(255,255,255,.11);
+    transform:translateY(105%);transition:transform .28s ease;
+  }
+  .sg-bar.on{transform:translateY(0)}
+  .sg-bar img{border-radius:8px;flex:0 0 auto}
+  .sg-bar-t{display:flex;flex-direction:column;line-height:1.25;min-width:0;flex:1 1 auto}
+  .sg-bar-t strong{font-size:15px}
+  .sg-bar-t span{font-size:12.5px;opacity:.72}
+  .sg-bar-btn{
+    flex:0 0 auto;background:var(--accent);color:#0b1f13;font-weight:700;font-size:15px;
+    text-decoration:none;border-radius:9px;min-height:44px;min-width:84px;
+    display:flex;align-items:center;justify-content:center;padding:0 20px;
+  }
+  body{padding-bottom:74px}
+}
+</style>
+<script>
+(function(){
+  var bar=document.getElementById('sgBar');if(!bar)return;
+  var cta=document.querySelector('.cta');
+  function visible(el){var r=el.getBoundingClientRect();return r.bottom>0&&r.top<window.innerHeight;}
+  function upd(){
+    var deep=window.scrollY>(window.innerHeight*0.35);
+    var showing=cta&&visible(cta);
+    var atEnd=(window.innerHeight+window.scrollY)>=(document.documentElement.scrollHeight-120);
+    bar.classList.toggle('on',deep&&!showing&&!atEnd);
+  }
+  addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+})();
+</script>
+<!-- /STICKY-INSTALL-BAR -->
+
 </body>
 </html>
