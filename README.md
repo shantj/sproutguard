@@ -70,6 +70,7 @@ Free, no-signup guides published alongside the app:
 - [How to block social media on iPhone](https://shantj.github.io/sproutguard/block-social-media-on-iphone.html) — close both the app and website escape hatches
 - [How to block Discord on iPhone](https://shantj.github.io/sproutguard/block-discord-on-iphone.html) — block the app, the website, and discord.gg invite links together
 - [How to block Messenger on iPhone](https://shantj.github.io/sproutguard/block-messenger-on-iphone.html) — block the app, the website, and m.me links together
+- [How to block X / Twitter on iPhone](https://shantj.github.io/sproutguard/block-twitter-on-iphone.html) — block the app, x.com, and legacy twitter.com links together
 - [How to block Telegram on iPhone](https://shantj.github.io/sproutguard/block-telegram-on-iphone.html) — block the app, the web client, and t.me links together
 - [How to block Snapchat on iPhone](https://shantj.github.io/sproutguard/block-snapchat-on-iphone.html) — block the app, the web client, and shared links together
 - [How to block WhatsApp on iPhone](https://shantj.github.io/sproutguard/block-whatsapp-on-iphone.html) — block the app, the web client, and wa.me links together

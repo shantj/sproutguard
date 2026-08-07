@@ -32,6 +32,7 @@
 - How to block social media on iPhone: https://shantj.github.io/sproutguard/block-social-media-on-iphone.html
 - How to block Discord on iPhone: https://shantj.github.io/sproutguard/block-discord-on-iphone.html
 - How to block Messenger on iPhone: https://shantj.github.io/sproutguard/block-messenger-on-iphone.html
+- How to block X / Twitter on iPhone: https://shantj.github.io/sproutguard/block-twitter-on-iphone.html
 - How to block Telegram on iPhone: https://shantj.github.io/sproutguard/block-telegram-on-iphone.html
 - How to block Snapchat on iPhone: https://shantj.github.io/sproutguard/block-snapchat-on-iphone.html
 - How to block WhatsApp on iPhone: https://shantj.github.io/sproutguard/block-whatsapp-on-iphone.html
