@@ -3,10 +3,17 @@
   <title>SproutGuard updates</title>
   <subtitle>New guides, tools, and acquisition write-ups from the makers of SproutGuard.</subtitle>
   <id>https://shantj.github.io/sproutguard/feed.xml</id>
-  <updated>2026-08-06T22:02:00Z</updated>
+  <updated>2026-08-07T02:02:00Z</updated>
   <link href="https://shantj.github.io/sproutguard/feed.xml" rel="self" type="application/atom+xml"/>
   <link href="https://shantj.github.io/sproutguard/" rel="alternate" type="text/html"/>
   <author><name>Sam_tj</name></author>
+  <entry>
+    <title>How to block Snapchat on iPhone</title>
+    <id>https://shantj.github.io/sproutguard/block-snapchat-on-iphone.html</id>
+    <link href="https://shantj.github.io/sproutguard/block-snapchat-on-iphone.html" rel="alternate"/>
+    <updated>2026-08-07T02:02:00Z</updated>
+    <summary>The built-in Screen Time setup for blocking Snapchat on iPhone, including the app, website and shared-link routes.</summary>
+  </entry>
   <entry>
     <title>How to block Telegram on iPhone</title>
     <id>https://shantj.github.io/sproutguard/block-telegram-on-iphone.html</id>
