@@ -35,6 +35,7 @@
 - How to block Bluesky on iPhone: https://shantj.github.io/sproutguard/block-bluesky-on-iphone.html
 - How to block Threads on iPhone: https://shantj.github.io/sproutguard/block-threads-on-iphone.html
 - How to block LinkedIn on iPhone: https://shantj.github.io/sproutguard/block-linkedin-on-iphone.html
+- How to block Pinterest on iPhone: https://shantj.github.io/sproutguard/block-pinterest-on-iphone.html
 - How to block Messenger on iPhone: https://shantj.github.io/sproutguard/block-messenger-on-iphone.html
 - How to block X / Twitter on iPhone: https://shantj.github.io/sproutguard/block-twitter-on-iphone.html
 - How to block Telegram on iPhone: https://shantj.github.io/sproutguard/block-telegram-on-iphone.html
