@@ -12,18 +12,18 @@
   ],
   "items": [
     {
-      "id": "https://shantj.github.io/sproutguard/block-bluesky-on-iphone.html",
-      "url": "https://shantj.github.io/sproutguard/block-bluesky-on-iphone.html",
-      "title": "How to block Bluesky on iPhone",
-      "summary": "The built-in Screen Time setup for blocking Bluesky on iPhone, including the app, bsky.app and go.bsky.app shared-link routes.",
-      "date_published": "2026-08-08T11:21:42Z"
-    },
-    {
       "id": "https://shantj.github.io/sproutguard/block-linkedin-on-iphone.html",
       "url": "https://shantj.github.io/sproutguard/block-linkedin-on-iphone.html",
       "title": "How to block LinkedIn on iPhone",
       "summary": "The built-in Screen Time setup for blocking LinkedIn on iPhone, including the app, linkedin.com and lnkd.in short-link routes.",
       "date_published": "2026-08-08T15:45:00Z"
+    },
+    {
+      "id": "https://shantj.github.io/sproutguard/block-bluesky-on-iphone.html",
+      "url": "https://shantj.github.io/sproutguard/block-bluesky-on-iphone.html",
+      "title": "How to block Bluesky on iPhone",
+      "summary": "The built-in Screen Time setup for blocking Bluesky on iPhone, including the app, bsky.app and go.bsky.app shared-link routes.",
+      "date_published": "2026-08-08T11:21:42Z"
     },
     {
       "id": "https://shantj.github.io/sproutguard/block-reels-on-iphone.html",
