@@ -69,6 +69,7 @@ Free, no-signup guides published alongside the app:
 - [How to block websites on iPhone](https://shantj.github.io/sproutguard/how-to-block-websites-on-iphone.html) — the free Screen Time setup, plus the passcode and hostname checks that make it hold
 - [How to block social media on iPhone](https://shantj.github.io/sproutguard/block-social-media-on-iphone.html) — close both the app and website escape hatches
 - [How to block Discord on iPhone](https://shantj.github.io/sproutguard/block-discord-on-iphone.html) — block the app, the website, and discord.gg invite links together
+- [How to block Bluesky on iPhone](https://shantj.github.io/sproutguard/block-bluesky-on-iphone.html) — block the app, bsky.app, and go.bsky.app links together
 - [How to block Threads on iPhone](https://shantj.github.io/sproutguard/block-threads-on-iphone.html) — block the app, threads.net, and the Instagram handoff route together
 - [How to block LinkedIn on iPhone](https://shantj.github.io/sproutguard/block-linkedin-on-iphone.html) — block the app, linkedin.com, and lnkd.in links together
 - [How to block Messenger on iPhone](https://shantj.github.io/sproutguard/block-messenger-on-iphone.html) — block the app, the website, and m.me links together
