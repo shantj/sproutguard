@@ -78,6 +78,7 @@ Free, no-signup guides published alongside the app:
 - [How to block YouTube on iPhone](https://shantj.github.io/sproutguard/block-youtube-on-iphone.html) — block the app, the website, and the short-link route together
 - [How to block Facebook on iPhone](https://shantj.github.io/sproutguard/block-facebook-on-iphone.html) — block the app, the website, and the shared-link route together
 - [How to block Instagram on iPhone](https://shantj.github.io/sproutguard/block-instagram-on-iphone.html) — plus the three loopholes (Safari, "Ignore Limit", reinstall) that undo it
+- [How to block Reels on iPhone](https://shantj.github.io/sproutguard/block-reels-on-iphone.html) — the honest workaround when iOS cannot remove only the Reels tab
 - [How to block app downloads on iPhone](https://shantj.github.io/sproutguard/how-to-block-app-downloads-on-iphone.html) — stop fifteen-second reinstalls from undoing the whole block
 - [How to block TikTok on iPhone](https://shantj.github.io/sproutguard/block-tiktok-on-iphone.html) — including the web route, in-app browser, and reinstall trap
 - [How to block YouTube Shorts on iPhone](https://shantj.github.io/sproutguard/block-youtube-shorts-on-iphone.html) — the honest workaround when iOS cannot block only the Shorts tab

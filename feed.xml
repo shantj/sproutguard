@@ -3,10 +3,17 @@
   <title>SproutGuard updates</title>
   <subtitle>New guides, tools, and acquisition write-ups from the makers of SproutGuard.</subtitle>
   <id>https://shantj.github.io/sproutguard/feed.xml</id>
-  <updated>2026-08-07T22:57:10Z</updated>
+  <updated>2026-08-08T03:04:10Z</updated>
   <link href="https://shantj.github.io/sproutguard/feed.xml" rel="self" type="application/atom+xml"/>
   <link href="https://shantj.github.io/sproutguard/" rel="alternate" type="text/html"/>
   <author><name>Sam_tj</name></author>
+  <entry>
+    <title>How to block Reels on iPhone</title>
+    <id>https://shantj.github.io/sproutguard/block-reels-on-iphone.html</id>
+    <link href="https://shantj.github.io/sproutguard/block-reels-on-iphone.html" rel="alternate"/>
+    <updated>2026-08-08T03:04:10Z</updated>
+    <summary>The honest setup for stopping Instagram and Facebook Reels on iPhone when iOS cannot block only the Reels tab.</summary>
+  </entry>
   <entry>
     <title>How to block app downloads on iPhone</title>
     <id>https://shantj.github.io/sproutguard/how-to-block-app-downloads-on-iphone.html</id>
