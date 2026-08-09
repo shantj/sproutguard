@@ -3,10 +3,17 @@
   <title>SproutGuard updates</title>
   <subtitle>New guides, tools, and acquisition write-ups from the makers of SproutGuard.</subtitle>
   <id>https://shantj.github.io/sproutguard/feed.xml</id>
-  <updated>2026-08-08T23:48:42Z</updated>
+  <updated>2026-08-09T03:55:53Z</updated>
   <link href="https://shantj.github.io/sproutguard/feed.xml" rel="self" type="application/atom+xml"/>
   <link href="https://shantj.github.io/sproutguard/" rel="alternate" type="text/html"/>
   <author><name>Sam_tj</name></author>
+  <entry>
+    <title>How to block Safari on iPhone</title>
+    <id>https://shantj.github.io/sproutguard/how-to-block-safari-on-iphone.html</id>
+    <link href="https://shantj.github.io/sproutguard/how-to-block-safari-on-iphone.html" rel="alternate"/>
+    <updated>2026-08-09T03:55:53Z</updated>
+    <summary>How to disable Safari on iPhone with Screen Time, plus when blocking specific websites is the better wall.</summary>
+  </entry>
   <entry>
     <title>How to block Facebook Reels on iPhone</title>
     <id>https://shantj.github.io/sproutguard/block-facebook-reels-on-iphone.html</id>
